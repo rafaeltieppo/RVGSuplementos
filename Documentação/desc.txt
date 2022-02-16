@@ -1,0 +1,3 @@
+tela login/cadastro
+home com produtos, promoçoes, "header" com categorias/ mehores da loja/ whey/ danones/ acesso ao carrinho, fale conosco e login/cadastro, 
+
