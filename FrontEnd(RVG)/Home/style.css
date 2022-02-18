@@ -1,0 +1,138 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   font-family: 'Poppins', sans-serif;
+}
+/*HEADER*/
+header {
+    height: 7vh;
+    display: flex;
+    background-color: rgb(255, 255, 255);
+    padding: 10px;
+}
+
+.logo h3 {
+    font-size: 1.7rem;
+}
+
+.logo p {
+    font-size: 0.72rem;
+    letter-spacing: 0.2rem;
+    opacity: 0.8;
+    text-transform: uppercase;
+}
+
+.conteudo {
+    display: flex;
+    justify-content: space-between;
+    width: 100vw;
+}
+
+.searchbar input {
+    height: 4vh;
+    width: 34vw;
+    background-color: rgba(128, 128, 128, 0.185);
+    border: 1px solid #fff;
+    border-radius: 3px;
+}
+
+.searchbar img {
+    position: relative;
+    top: 1.2vh;
+    right: 2.2vw;
+    height: 3vh;
+}
+
+.loginarea {
+    display: flex;
+    width: 15vw;
+}
+
+.loginuser {
+    display: flex;
+    cursor: pointer;
+}
+
+.loginuser img {
+    height: 3.2vh;
+    margin-top: 0.8vh;
+}
+
+.loginuser p {
+    margin-top: 1.6vh;
+}
+
+.menu img {
+    height: 3.3vh;
+    position: relative;
+    right: -5vw;
+    top: 0.8vh;
+    cursor: pointer;
+}
+
+.modal {
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    height: 50vh;
+    width: 20vw;
+    background-color: rgb(255, 255, 255);
+}
+
+/*HEADER</>*/
+
+
+/*CATEGORIA*/
+.categoria {
+    width: 100vw;
+    background-color: #173EC7;
+}
+
+.categ {
+    height: 4vh;
+    width: 50vw;
+    display: flex;
+    margin: auto;
+    background-color: #173EC7;
+    color: #fff;
+    justify-content: space-between;
+}
+
+.categ ul {
+    font-size: 0.9rem;
+    display: flex;
+    align-items: center;
+    list-style: none;
+    letter-spacing: 0.05rem;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+/*CATEGORIA</>*/
+
+
+/*IMAGEM*/
+
+.dir {
+    height: 70vh;
+    background-color: rgb(51, 49, 49);
+}
+
+.imagem {
+    height: 70vh;
+    width: 80vw;
+    background-color: #000;
+    margin: auto;
+    border-radius: 5px;
+}
+
+.imagem > h1 {
+    color: #fff;
+    display: flex;
+    justify-content: center;
+}
+/*IMAGEM</>*/
+
+/*CONTAINER*/
+
+/*CONTAINER</>*/
