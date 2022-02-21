@@ -17,6 +17,10 @@ header {
     font-size: 1.7rem;
 }
 
+.logo {
+    margin-left: 10vw;
+}
+
 .logo p {
     font-size: 0.72rem;
     letter-spacing: 0.2rem;
@@ -81,6 +85,7 @@ header {
     height: 100vh;
     width: 20vw;
     background-color: rgb(255, 255, 255);
+    z-index: 999;
 }
 
 .close img {
@@ -95,8 +100,8 @@ header {
 
 /*CATEGORIA*/
 .categoria {
-    width: 100vw;
-    background-color: #173EC7;
+    width: 100%;
+    background-color: #000000;
 }
 
 /*#15616e*/
@@ -125,14 +130,15 @@ header {
 /*IMAGEM*/
 
 .dir {
-    height: 70vh;
-    background-color: rgb(51, 49, 49);
+    height: 50vh;
+    background-color: #4228d6;
 }
 
 .imagem {
-    height: 70vh;
-    width: 90vw;
-    background: url("../assets/imagem.jpg");
+    height: 50vh;
+    background-size: cover;
+    width: 80vw;
+    background: rgb(46, 45, 45);
     margin: auto;
     border-radius: 5px;
 }
@@ -188,4 +194,112 @@ header {
 
 .car p {
     font-size: 1.1rem;
+}
+
+.tuba {
+    position: absolute;
+    top: 65vh;
+    left: 10vw;
+    height: 30vh;
+    width: 12.25vw;
+    background: url("../assets/tuba.png");
+}
+
+.lineprodutos {
+    display: grid;
+    grid-template-columns: 320px 320px 320px 320px;
+    position: relative;
+    top: 5vh;
+    left: 28vw;
+    width: 65vw;
+}
+
+.produto {
+    height: 45vh;
+    width: 13vw;
+    background: rgb(138, 133, 133);
+    border-radius: 5px;
+}
+
+.imagemprod {
+    height: 28vh;
+    width: 100%;
+    background: black;
+    background-size: cover;
+    border-radius: 5px;
+}
+
+.imagemprod p {
+    color: white;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.descprod {
+    color: white;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.rodape {
+    margin-top: 20vh;
+    position: relative;
+    bottom: 0;
+    height: 30vh;
+    background:black;
+}
+
+.copy {
+    width: 30vw;
+    position: inherit;
+    top: 25vh;
+    left: 4.7vw;
+    color: white;
+    opacity: 0.8;
+    font-size: 0.9rem;
+}
+
+.linha2 {
+    position: inherit;
+    top: 22vh;
+    width: 90%;
+    height: 1px;
+    background-color: rgb(255, 255, 255);
+    opacity: 0.3;
+    margin: auto;
+}
+
+.cardwhats {
+    margin: 50px;
+    width: 10vw;
+    height: 5vh;
+    border: 1px solid white;
+    float: right;
+    border-radius: 5px;
+    display: flex;
+    padding: 15px;
+}
+
+.cardwhats img {
+    margin-top: -10px;
+    height: 3.5vh;
+    margin-left: 2vw;
+}
+
+.cardwhats p {
+    color: white;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #555353;
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-track {
+    background-color:rgb(255, 255, 255);
+    border-radius: 5px;
 }
