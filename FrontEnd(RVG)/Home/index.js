@@ -17,7 +17,6 @@ function showModal() {
 
 function closeModal() {
     modal.style.display = "none";
-
     options.innerHTML = "";
     on.innerHTML = "";
 }

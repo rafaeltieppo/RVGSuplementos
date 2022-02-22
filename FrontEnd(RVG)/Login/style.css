@@ -1,0 +1,107 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    outline: none;
+}
+
+.nome {
+    text-align: center;
+    margin-top: 10vh;
+}
+
+.nome h3 {
+    font-size: 1.7rem;
+}
+
+.nome p {
+    font-size: 0.72rem;
+    opacity: 0.7;
+    letter-spacing: 0.2rem;
+    text-transform: uppercase;
+}
+
+.card {
+    position: absolute;
+    top: calc(50% - 240px);
+    left: calc(50% - 250px);
+    height: 450px;
+    width: 500px;
+    background-color: #4228d6;
+    border-radius: 15px;
+}
+
+.login {
+    text-align: center;
+    margin-top: 4vh;
+    font-size: 1.5rem;
+    color: white;
+    font-weight: bold;
+}
+
+.inputs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5vh;
+}
+
+.inputs input {
+    width: 55%;
+    height: 35px;
+    margin-top: 20px;
+    border-radius: 4px;
+    border: none;
+    outline: none;
+    padding: 10px;
+}
+
+#entrarbtn {
+    width: 80px;
+    height: 30px;
+    border-radius: 5px;
+    border: none;
+    margin-top: 5vh;
+    cursor: pointer;
+}
+
+.ntc {
+    text-align: center;
+    margin-top: 3vh;
+}
+
+.ntc p {
+    color: white;
+    font-size: 0.9rem;
+}
+
+.ntc button {
+    background: #4228d6;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-top: 7px;
+}
+
+.inputcadas {
+    position: relative;
+    top: -80px;
+    left: 22.5%;
+    width: 55%;
+    height: 35px;
+    margin-top: 20px;
+    border-radius: 4px;
+    border: none;
+    outline: none;
+    padding: 10px;
+}
+
+.cadastrar {
+    width: 80px;
+    height: 30px;
+    border-radius: 5px;
+    border: none;
+    margin-top: 5vh;
+    cursor: pointer;
+}
