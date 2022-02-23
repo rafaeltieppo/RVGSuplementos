@@ -6,15 +6,42 @@ var entrar = document.querySelector("#entrarbtn");
 var cadastrar = document.querySelector(".cadastrar");
 
 function login() {
-    email = email.value,
-    senha = senha.value,
+    let data = {
+        email = email.value,
+        senha = senha.value,
+    }
+    console.log(data)
 
-    console.log("Email: " + email)
-    console.log("Senha: " + senha)
-
+    fetch("http://localhost/backend/src/controll/routes/route.clientes.php", {
+        "method": 'POST',
+        "headers": {
+            "Content-Type": "application/json"
+        },
+        "body": data
+    })
+    .then(resp => { return resp.json() })
+    .then(data => { 
+        console.log(data);
+    })
 }
 
+
 function cadastrarUser() {
+    fetch("http://localhost/backend/src/controll/routes/route.clientes.php", {
+       "method": 'POST',
+       "headers": {
+           "Content-Type": "aplication/json"
+       },
+       "body": data 
+    })
+    .then(resp => { return resp.json() })
+    .then(data => { 
+        
+    })
+}
+
+
+function cadastrarbox() {
     let inputs = document.querySelector(".inputs");
     let input = document.createElement("input");
     let cadastrar = document.createElement("button")
@@ -27,7 +54,7 @@ function cadastrarUser() {
 
     ntc.style.display = "none";
     entrar.style.display = "none";
-    cadastrar.style.value = "Cadastrar";
+    cadastrar.innerHTML = "Cadastrar";
 }
 
 // function login() {

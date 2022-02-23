@@ -13,6 +13,7 @@ function showModal() {
     modal.style.display = "flex";
     modal.style.border = "1px solid black";
     modal.style.borderRadius = "5px";
+    modal.style.height = "60vh";
 }
 
 function closeModal() {

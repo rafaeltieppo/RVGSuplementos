@@ -5,136 +5,13 @@
     font-family: 'Poppins', sans-serif;
     outline: none;
 }
-/*HEADER*/
-header {
-    height: 7vh;
-    display: flex;
-    background-color: rgb(255, 255, 255);
-    padding: 10px;
-    position: fixed;
-    top: 0;
-    box-shadow: 0px 0px 30px #000;
-}
-
-.logo h3 {
-    font-size: 1.7rem;
-}
-
-.logo {
-    margin-left: 10vw;
-}
-
-.logo p {
-    font-size: 0.72rem;
-    letter-spacing: 0.2rem;
-    opacity: 0.7;
-    text-transform: uppercase;
-}
-
-.conteudo {
-    display: flex;
-    justify-content: space-between;
-    width: 100vw;
-    background: white;
-}
-
-.searchbar input {
-    height: 4vh;
-    width: 34vw;
-    background-color: rgba(128, 128, 128, 0.185);
-    border: 1px solid #fff;
-    border-radius: 3px;
-    padding: 10px;
-}
-
-.searchbar img {
-    position: relative;
-    top: 1.2vh;
-    right: 2.2vw;
-    height: 3vh;
-    cursor: pointer;
-}
-
-.loginarea {
-    display: flex;
-    width: 15vw;
-}
-
-.loginuser {
-    display: flex;
-    cursor: pointer;
-}
-
-.loginuser img {
-    height: 3.2vh;
-    margin-top: 0.8vh;
-}
-
-.loginuser p {
-    margin-top: 1.6vh;
-}
-
-.menu img {
-    height: 3.3vh;
-    position: relative;
-    right: -5vw;
-    top: 0.8vh;
-    cursor: pointer;
-}
-
-.modal {
-    padding: 10px;
-    position: absolute;
-    right: 0px;
-    top: 0px;
-    height: 100vh;
-    width: 20vw;
-    background-color: rgb(255, 255, 255);
-    z-index: 999;
-}
-
-.close img {
-    cursor: pointer;
-    height: 3vh;
-    position: relative;
-    right: -16vw;
-}
-
-/*HEADER</>*/
-
-
-/*CATEGORIA*/
-.categoria {
-    width: 100%;
-    background-color: #000000;
-}
-
-/*#15616e*/
-
-.categ {
-    height: 4vh;
-    width: 35vw;
-    display: flex;
-    margin: auto;
-    color: #fff;
-    justify-content: space-between;
-}
-
-.categ ul {
-    font-size: 0.9rem;
-    display: flex;
-    align-items: center;
-    list-style: none;
-    letter-spacing: 0.05rem;
-    cursor: pointer;
-    text-transform: uppercase;
-}
-/*CATEGORIA</>*/
 
 
 /*IMAGEM*/
 
+
 .dir {
+    margin-top: 10.5vh;
     height: 49.2vh;
     background-color: #201f25;
 }
@@ -143,57 +20,14 @@ header {
     height: 50vh;
     background-size: cover;
     width: 80vw;
-    background: url("../bunners/Captura\ de\ tela\ 2022-02-22\ 085859.png");
+    background: url("../bunners/banner01.png");
     margin: auto;
     background-repeat: no-repeat;
 }
+
+
 /*IMAGEM</>*/
 
-/*CONTAINER*/
-
-/*CONTAINER</>*/
-
-.ola {
-    position: relative;
-    top: 3vh;
-    font-size: 1.4rem;
-    font-weight: bold;
-    color: #173EC7;
-}
-
-.options {
-    position: relative;
-    top: 10vh;
-    left: -2vw;
-    font-size: 1rem;
-}
-
-.options p {
-    margin-top: 1.2vh;
-    opacity: 0.8;
-    font-size: 0.95rem;
-    cursor: pointer;
-}
-
-.linha {
-    position: inherit;
-    top: 20vh;
-    width: 19vw;
-    height: 1px;
-    background-color: black;
-    opacity: 0.1;
-    margin: auto;
-}
-
-.car {
-    position: relative;
-    top: 22vh;
-    left: -8.2vw
-}
-
-.car p {
-    font-size: 1.1rem;
-}
 
 .tuba {
     position: absolute;
@@ -204,101 +38,109 @@ header {
     background: url("../assets/tuba.png");
 }
 
-.lineprodutos {
+.lineprodutos1 {
     display: grid;
-    grid-template-columns: 320px 320px 320px 320px;
+    grid-template-columns: 310px 310px 310px 310px;
     position: relative;
     top: 5vh;
     left: 28vw;
     width: 65vw;
 }
 
+.lineprodutos2 {
+    display: grid;
+    grid-template-columns: 310px 310px 310px 310px 310px;
+    position: relative;
+    top: 27vh;
+    left: 10vw;
+    width: 65vw;
+}
+
+
+/*CARD-PRODUTO*/
+
+
 .produto {
-    height: 45vh;
-    width: 13vw;
-    background: rgb(138, 133, 133);
-    border-radius: 5px;
+    height: 44vh;
+    width: 14vw;
+    /* background: rgb(138, 133, 133); */
+    border-radius: 10px;
+    border: 1px solid rgba(128, 128, 128, 0.288);
 }
 
 .imagemprod {
     height: 28vh;
     width: 100%;
-    background: black;
+    background: url("../assets/whey.png");
     background-size: cover;
     border-radius: 5px;
+    margin-top: 10px;
 }
 
-.imagemprod p {
+/* .imagemprod p {
     color: white;
     font-size: 1.5rem;
     text-align: center;
-}
+} */
 
 .descprod {
-    color: white;
-    font-size: 1.5rem;
+    color: rgb(0, 0, 0);
+    font-size: 1rem;
     text-align: center;
+    letter-spacing: 0.1rem;
+    font-weight: bold;
 }
 
-.rodape {
-    margin-top: 20vh;
+.descprod button {
+    width: 60%;
+    height: 3vh;
+    margin-top: 3.5vh;
+    background: #173EC7;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.descprod a {
+    text-decoration: none;
+    color: white;
+}
+
+.p1 {
+    margin-top: 2vh;
+}
+
+.p2 {
+    margin-top: 2vh;
+}
+
+
+/*CARD-PRODUTO</>*/
+
+
+.omv {
     position: relative;
-    bottom: 0;
-    height: 30vh;
-    background:black;
-}
-
-.copy {
+    top: 18vh;
+    left: 10vw;
     width: 30vw;
-    position: inherit;
-    top: 25vh;
-    left: 4.7vw;
-    color: white;
-    opacity: 0.8;
-    font-size: 0.9rem;
 }
 
-.linha2 {
-    position: inherit;
-    top: 22vh;
-    width: 90%;
-    height: 1px;
-    background-color: rgb(255, 255, 255);
-    opacity: 0.3;
-    margin: auto;
+.omv p {
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    font-weight: 570;
+    letter-spacing: 0.15rem
 }
-
-.cardwhats {
-    margin: 50px;
-    width: 10vw;
-    height: 5vh;
-    border: 1px solid white;
-    float: right;
-    border-radius: 5px;
+/* 
+.imagens {
     display: flex;
-    padding: 15px;
+    justify-content: space-evenly;
+    margin: 0 auto;
+    margin-top: 12vh;
+    width: 70vw;
 }
 
-.cardwhats img {
-    margin-top: -10px;
-    height: 3.5vh;
-    margin-left: 2vw;
-}
-
-.cardwhats p {
-    color: white;
-}
-
-::-webkit-scrollbar {
-    width: 10px;
-}
-
-::-webkit-scrollbar-thumb {
-    background-color: #555353;
-    border-radius: 5px;
-}
-
-::-webkit-scrollbar-track {
-    background-color:rgb(255, 255, 255);
-    border-radius: 5px;
-}
+.imagens img {
+} */
