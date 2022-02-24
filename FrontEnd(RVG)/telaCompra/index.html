@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../global/glocal.css">
+</head>
+<body>
+    <header>
+        <div class="conteudo">
+            <div class="logo">
+                <h3>RVG</h3>
+                <p>Suplementos</p>
+            </div>
+            <div class="searchbar">
+                <input type="text" placeholder="Do que você precisa?">
+                <img src="../assets/lupa.png" alt="">
+            </div>
+            <div class="loginarea">
+                <div class="loginuser">
+                    <img src="../assets/user.png" class="userimg">
+                    <p href="../Login/index.html">Entrar</p>
+                </div>
+                <div class="menu" onclick="Menu()">
+                    <img src="../assets/menu.png" alt="" onclick="showModal()">
+                </div>
+            </div>
+            <div class="modal" hidden>
+                <div class="close">
+                    <img src="../assets/x.png" alt="" onclick="closeModal()">
+                </div>
+                <div class="on"></div>
+                <div class="options"></div>
+                <div class="linha"></div>
+                <div class="carrinho">
+                    <div class="car">
+                        <p>Meu Carrinho</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="categoria">
+            <div class="categ">
+                <ul>Categorias</ul>
+                <ul>Lançamentos</ul>
+                <ul>Danones</ul>
+                <ul>Whey</ul>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
