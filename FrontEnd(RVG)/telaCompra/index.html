@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="../global/glocal.css">
+    <link rel="stylesheet" href="./style.css">
 </head>
 <body>
     <header>
@@ -24,7 +25,10 @@
                     <p href="../Login/index.html">Entrar</p>
                 </div>
                 <div class="menu" onclick="Menu()">
-                    <img src="../assets/menu.png" alt="" onclick="showModal()">
+                    <p>
+                        <img src="../assets/menu.png" alt="" onclick="showModal()">
+                    </p>
+                    
                 </div>
             </div>
             <div class="modal" hidden>
@@ -45,12 +49,59 @@
     <main>
         <div class="categoria">
             <div class="categ">
-                <ul>Categorias</ul>
-                <ul>Lançamentos</ul>
-                <ul>Danones</ul>
-                <ul>Whey</ul>
+                <a>Categorias</a>
+                <a>Lançamentos</u>
+                <a>Danones</a>
+                <a>Whey</a>
             </div>
         </div>
+
+        <div class="meucarrinho">
+            <p>Meu carrinho</p>
+        </div>
+
+        <div class="barra">
+            <p>Detalhes do produto</p>
+        </div>
+        <div class="prodselect">
+            <div class="pimg">
+                <p>Imagem produto selecionado</p>
+            </div>
+            <div class="pdesc">
+                <p>Descrição do produto selecionado</p>
+            </div>
+            <div class="ppreco">
+                <p>Preço do produto selecionado</p>
+            </div>
+            <div class="resumoped">
+                <div class="presumo">
+                    <p>Resumo do pedido</p>
+                </div>
+                <div class="subt">
+                    <div class="psubt">
+                        <p>Subtotal</p>
+                    </div>
+                    <div class="pval">
+                        <p>R$ 0,00</p>
+                    </div>
+
+                </div>
+                <div class="total">
+                    <div class="ptotal">
+                        <p>Total</p>
+                    </div>
+                    <div class="pval">
+                        <p>R$ 0,00</p>
+                    </div>
+                </div>
+                <div class="fecharped">
+                    <button onclick="FecharPedido()">Fechar Pedido</button>
+                </div>
+            </div>
+        </div>
+
+
     </main>
 </body>
+<script src="../global/global.js"></script>
 </html>

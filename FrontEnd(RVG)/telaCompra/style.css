@@ -1,0 +1,131 @@
+.meucarrinho p {
+    position: relative;
+    top: 20vh;
+    left: 5vw;
+    color: #173EC7;
+    font-weight: bold;
+    font-size: 1.4rem;
+    width: 40vw;
+    text-transform: uppercase;
+}
+
+.prodselect {
+    width: 70%;
+    height: 50vh;
+    border: 1px solid #000;
+    position: absolute;
+    top: 30vh;
+    left: 5vw;
+    right: 5vw;
+    padding: 30px;
+    display: flex;
+}
+
+.pimg {
+    height: 30vh;
+    width: 15vw;
+    border: 1px solid rgba(92, 89, 89, 0.397);
+    position: relative;
+    top: 4vh;
+}
+
+.pimg p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15vh;
+}
+
+.pdesc {
+    height: 10vh;
+    width: 20vw;
+    border: 1px solid rgba(92, 89, 89, 0.397);
+    margin-left: 2vw;
+    margin-top: 4vh;
+    padding: 30px;
+}
+
+.ppreco {
+    height: 10vh;
+    padding: 30px;
+    width: 20vw;
+    border: 1px solid rgba(92, 89, 89, 0.397);
+    margin-left: -20vw;
+    margin-top: 20vh;
+}
+
+.resumoped {
+    position: relative;
+    left: 8vw;
+    top: 4vh;
+    height: 30vh;
+    width: 20vw;
+    border: 1px solid rgba(92, 89, 89, 0.397);
+}
+
+.presumo {
+    height: 5vh;
+    border-bottom: 1px solid rgba(92, 89, 89, 0.397);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+
+.subt {
+    height: 5vh;
+    border-bottom: 1px solid rgba(92, 89, 89, 0.397);
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.total {
+    height: 5vh;
+    border-bottom: 1px solid rgba(92, 89, 89, 0.397);
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.ptotal {
+    font-size: 1.35rem;
+    font-weight: bold;
+}
+
+.barra {
+    width: 38.6%;
+    height: 5vh;
+    border: 1px solid rgba(92, 89, 89, 0.397);
+    border-top: none;
+    position: relative;
+    left: 5vw;
+    top: 27.3vh;
+    padding: 15px;
+}
+
+.barra p {
+    text-align: center;
+    font-size: 1rem;
+    font-weight: bold;
+    letter-spacing: 0.05rem;
+}
+
+.fecharped {
+    margin: 40px;
+}
+
+.fecharped button {
+    height: 4vh;
+    width: 7vw;
+    display: flex;
+    margin: auto;
+    text-transform: uppercase;
+    color: #fff;
+    background: #173EC7;
+    border: none;
+    border-radius: 5px;
+    padding: 12px;
+    cursor: pointer;
+}

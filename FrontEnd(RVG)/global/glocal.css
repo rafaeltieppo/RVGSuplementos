@@ -138,10 +138,30 @@ header {
     text-decoration: none;
 }
 
+.categ a:hover {
+    color: #173EC7;
+    transition: .4s
+}
+
 /*CATEGORIA</>*/
 
 
 /*MENU*/
+
+.menu p:before {
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #173EC7;
+    position: absolute;
+    top: 4.7vh;
+    left: 94.7vw;
+    transition: .3s;
+}
+
+.menu:hover p:before {
+    width: 1.15vw;
+}
 
 .modal {
     z-index: 999;
