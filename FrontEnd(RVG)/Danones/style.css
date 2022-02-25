@@ -1,0 +1,29 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    outline: none;
+}
+.alerta {
+    height: 22vh;
+    width: 100%;
+    background-color: red;
+    position: absolute;
+    top: 10vh;
+}
+.alerta img {
+    height: 17vh;
+    display: flex;
+    margin: auto;
+
+}
+.alerta p {
+    text-align: center;
+    position: relative;
+    top: 10vh;
+    right: 10vw;
+}
+#x{
+    height: 3vh;
+}
