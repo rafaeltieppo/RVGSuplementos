@@ -84,24 +84,12 @@
     margin-top: 7px;
 }
 
-.inputcadas {
-    position: relative;
-    top: -80px;
-    left: 22.5%;
-    width: 55%;
-    height: 35px;
-    margin-top: 20px;
-    border-radius: 4px;
-    border: none;
-    outline: none;
-    padding: 10px;
-}
-
-.cadastrar {
+#cadastrarbtn {
     width: 80px;
     height: 30px;
     border-radius: 5px;
     border: none;
-    margin-top: 5vh;
     cursor: pointer;
+    position: relative;
+    top: 5vh;
 }

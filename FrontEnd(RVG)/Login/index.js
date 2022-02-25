@@ -1,71 +1,54 @@
 var email = document.querySelector("#email");
 var senha = document.querySelector("#senha");
+var nome = document.querySelector("#nome");
 var btncadas = document.querySelector("#btncadas");
 var ntc = document.querySelector(".ntc");
 var entrar = document.querySelector("#entrarbtn");
-var cadastrar = document.querySelector(".cadastrar");
+var cadastrar = document.querySelector("#cadastrarbtn");
+
+
+function loadpage() {
+    cadastrar.style.display = "none";
+    nome.style.display = "none";
+}
 
 function login() {
-    let data = {
-        email = email.value,
-        senha = senha.value,
-    }
-    console.log(data)
+    let userdata = JSON.stringify({
+        email: email.value,
+        senha: senha.value,
+    });
+
+    console.log(userdata);
 
     fetch("http://localhost/backend/src/controll/routes/route.clientes.php", {
         "method": 'POST',
         "headers": {
             "Content-Type": "application/json"
         },
-        "body": data
+        "body": userdata
     })
     .then(resp => { return resp.json() })
     .then(data => { 
-        console.log(data);
+        if(data.lenght > 0) {
+            window.location.href = '../Home/index.js';
+        }else {
+            alert("Usuario ou senha invalida");
+        }
     })
 }
 
-
-function cadastrarUser() {
-    fetch("http://localhost/backend/src/controll/routes/route.clientes.php", {
-       "method": 'POST',
-       "headers": {
-           "Content-Type": "aplication/json"
-       },
-       "body": data 
+function cadastraruser() {
+    let data = JSON.stringify({
+        email: email.value,
+        senha: senha.value,
+        nome: nomeuser.value
     })
-    .then(resp => { return resp.json() })
-    .then(data => { 
-        
-    })
+    console.log(data)
 }
-
 
 function cadastrarbox() {
-    let inputs = document.querySelector(".inputs");
-    let input = document.createElement("input");
-    let cadastrar = document.createElement("button")
-    input.placeholder = "Nome";
-    input.className = "nomeinput";
-    cadastrar.className = "cadastrar";
-        
-    inputs.appendChild(input);
-    inputs.appendChild(cadastrar);
-
     ntc.style.display = "none";
     entrar.style.display = "none";
-    cadastrar.innerHTML = "Cadastrar";
+    cadastrar.style.display = "block";
+    nome.style.display = "block";
 }
-
-// function login() {
-//     fetch("http://localhost/backend/src/controll/routes/route.clientes.php")
-//     .then(resp => {
-//         return resp.json();
-//     })
-//     .then(data => {
-//         console.log(data)
-//     })
-//     .catch(err => {
-//         console.log(err);
-//     })
-// }

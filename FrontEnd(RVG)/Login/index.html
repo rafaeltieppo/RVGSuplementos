@@ -6,11 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Faça seu login - RVG Suplementos</title>
     <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Poppins:wght@500&display=swap" rel="stylesheet">
 </head>
-<body>
+<body onload="loadpage()">
     <header>
         <div class="nome">
-            <h3>RVG</h3>
+            <h3>Weight</h3>
             <p>Suplementos</p>
         </div>
     </header>
@@ -22,7 +25,9 @@
             <div class="inputs">
                 <input type="text" placeholder="Email" id="email" required>
                 <input type="text" placeholder="Senha" id="senha" required>
+                <input type="text" placeholder="Nome" id="nome" required>
                 <button type="button" onclick="login()" id="entrarbtn">Entrar</button>
+                <button onclick="cadastraruser()" id="cadastrarbtn">Cadastrar</button>
             </div>
             <div class="ntc">
                 <p>Não tem conta?</p>
