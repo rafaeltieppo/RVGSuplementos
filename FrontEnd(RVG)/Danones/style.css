@@ -11,6 +11,8 @@
     background-color: red;
     position: absolute;
     top: 10vh;
+    box-shadow: border;
+    box-sizing: 4vh;
 }
 .alerta img {
     height: 17vh;
@@ -26,4 +28,69 @@
 }
 #x{
     height: 3vh;
+}
+.lineprodutos1 {
+    background-color: rgb(255, 255, 255);
+    display: grid;
+    grid-template-columns: 310px 310px 310px 310px 310px;
+    position: relative;
+    top: 40vh;
+    left: 15vw;
+    width: 75vw;
+}
+.produto {
+    height: 44vh;
+    width: 14vw;
+    margin-left: 10vws;
+    /* background: rgb(138, 133, 133); */
+    border-radius: 10px;
+    border: 1px solid rgba(16, 105, 238, 0.288);
+}
+
+.imagemprod {
+    height: 28vh;
+    width: 100%;
+    background: url("../assets/gh.png");
+    background-size: cover;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+/* .imagemprod p {
+    color: white;
+    font-size: 1.5rem;
+    text-align: center;
+} */
+
+.descprod {
+    color: rgb(0, 0, 0);
+    font-size: 1rem;
+    text-align: center;
+    letter-spacing: 0.1rem;
+    font-weight: bold;
+}
+
+.descprod button {
+    width: 60%;
+    height: 3vh;
+    margin-top: 3.5vh;
+    background: #173EC7;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.descprod a {
+    text-decoration: none;
+    color: white;
+}
+
+.p1 {
+    margin-top: 2vh;
+}
+
+.p2 {
+    margin-top: 2vh;
 }
