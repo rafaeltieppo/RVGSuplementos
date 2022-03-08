@@ -218,6 +218,7 @@ export default function Home({ }) {
                     <Image source={uatis} style={styles.uatisapi} />
                     <Text style={styles.txtUatis}>WATSAPP</Text>
                 </TouchableOpacity>
+                <Text style={styles.txtTime}>SEGUNDA A SEXTA DAS 7:30 AS 11:30</Text>
                 <View style={styles.line}></View>
                 <Text style={styles.lastTxt}>RVG SUplementos. Todods os direitos reservados. 2022</Text>
             </View>
@@ -337,7 +338,6 @@ const styles = StyleSheet.create({
         color: "#FFFF",
         fontWeight: "bold",
         fontSize: 12,
-
         marginLeft: 30,
     },
     line:{
@@ -373,5 +373,6 @@ const styles = StyleSheet.create({
         color: "#FFFF",
         marginTop: 15,
     },
+    txtTime:{color: "#FFFF", fontSize: 10, marginLeft: 270, marginTop: 4},
 
 });
