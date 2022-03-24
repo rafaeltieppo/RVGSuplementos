@@ -6,18 +6,21 @@ import littleCar from "../assets/vista-lateral-vazia-do-carrinho-de-compras.png"
 import growthWhey from "../assets/growth.png"
 import cretina1 from "../assets/creatianG.png"
 import uatis from "../assets/whatsapp-1 (1).png"
+import wheyMax from "../assets/suplements.png"
 
-export default function Home({ }) {
-
+export default function Home({navigation }) {
+    const irParaHome = () => {
+        navigation.navigate("Home");
+    };
     return (
         <ScrollView>
             <View style={styles.fundo}>
             <View style={styles.container}>
                 <Image source={Options} style={styles.options} />
-                <View>
+                <TouchableOpacity onPress={irParaHome} >
                     <Text style={styles.tituloTxt}>Weight</Text>
                     <Text style={styles.subTituloTxt}>Suplementos</Text>
-                </View>
+                </TouchableOpacity>
                 <Image source={littleCar} style={styles.littleCar} />
             </View>
             <View style={styles.placeholder}>
@@ -104,6 +107,16 @@ export default function Home({ }) {
                     </Text>
                     <Text style={styles.precin}>R$50,00</Text>
                 </View>        
+            </View>
+            <View style={styles.seeMore}>
+                <ImageBackground 
+                    source={{uri:wheyMax}}
+                    style={styles.wheys}
+                >
+                    <TouchableOpacity style={styles.verMais}>
+                        <Text style={styles.mais}>VER  MAIS</Text>
+                    </TouchableOpacity>
+            </ImageBackground>
             </View>
             <View style={styles.footer}>
                 <TouchableOpacity style={styles.wats}>
@@ -222,7 +235,7 @@ const styles = StyleSheet.create({
     },
     prodRelac: {
         fontWeight: "bold",
-        fontSize: "15px",
+        fontSize: "19px",
         marginLeft: 20,
         marginTop: 20,
     },

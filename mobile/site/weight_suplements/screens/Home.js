@@ -4,7 +4,7 @@ import { StyleSheet, Text, View, Image, TextInput, ScrollView, TouchableOpacity,
 import Options from "../assets/menu.png";
 import littleCar from "../assets/vista-lateral-vazia-do-carrinho-de-compras.png";
 import bigImg2 from "../assets/banner02.png"
-import shark from "../assets/tuba-removebg-preview.png"
+import goku from "../assets/gokumui.png"
 import maxWhey from "../assets/maxtt.png"
 import growthWhey from "../assets/growth.png"
 import cretina1 from "../assets/creatianG.png"
@@ -15,16 +15,19 @@ import wheyMax from "../assets/suplements.png"
 
 
 
-export default function Home({ }) {
+export default function Home({navigation }) {
+    const irParaHome = () => {
+        navigation.navigate("Home");
+    };
 
     return (
         <ScrollView>
             <View style={styles.container}>
                 <Image source={Options} style={styles.options} />
-                <View>
+                <TouchableOpacity onPress={irParaHome} >
                     <Text style={styles.tituloTxt}>Weight</Text>
                     <Text style={styles.subTituloTxt}>Suplementos</Text>
-                </View>
+                </TouchableOpacity>
                 <Image source={littleCar} style={styles.littleCar} />
             </View>
                 <View style={styles.placeholder}>
@@ -34,7 +37,7 @@ export default function Home({ }) {
                 <Image source={bigImg2} style={styles.princImg} />
             </View>
             <View style={styles.tubatuba}>
-                <Image source={shark} style={styles.tuba} />
+                <Image source={goku} style={styles.tuba} />
             </View>
             <Text style={styles.subTtl}>Suplementos Proteicos</Text>
             <View style={styles.boxProd}> 
@@ -220,7 +223,7 @@ export default function Home({ }) {
                 </TouchableOpacity>
                 <Text style={styles.txtTime}>SEGUNDA A SEXTA DAS 7:30 AS 11:30</Text>
                 <View style={styles.line}></View>
-                <Text style={styles.lastTxt}>RVG SUplementos. Todods os direitos reservados. 2022</Text>
+                <Text style={styles.lastTxt}>Weight Suplementos. Todods os direitos reservados. 2022</Text>
             </View>
         </ScrollView>
         
@@ -245,7 +248,7 @@ const styles = StyleSheet.create({
         color: "darkGray"
     },
     options: { width: 30, height: 30, marginLeft: 10,},
-    littleCar: { width: 40, height: 40,  marginLeft: 100,},
+    littleCar: { width: 40, height: 40,  marginLeft: 120,},
     princImg: { width: "100%", height: 140,
     shadowColor: "#000",
     shadowOffset: {width: 0, height: 4},
@@ -269,12 +272,12 @@ const styles = StyleSheet.create({
     },
 
     tubatuba: { marginTop: 20, alignItems:"center"},
-    tuba: { width: 146, height: 199,},
+    tuba: { width: "95%", height: 240, marginRight: 170},
     subTtl:{
         fontWeight: "bold",
         fontSize: 27,
         textAlign: "center",
-        marginTop: 30,
+        marginTop: 0,
         shadowColor: "#000",
         shadowOffset: {width: 0, height: 4},
         shadowOpacity: 0.7,
