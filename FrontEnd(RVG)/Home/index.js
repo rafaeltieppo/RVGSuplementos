@@ -39,3 +39,14 @@ function Menu() {
     options.appendChild(cmc);
     options.appendChild(entrar);
 }
+
+function carregarSuplementos() {
+    fetch("http://localhost/backend/src/controll/routes/route.suplemento.php")
+    .then(resp => { return resp.json() })
+    .then(data => { 
+        data.forEach(suplemento => { 
+            let p1 = document.querySelector('.p1');
+            p1.value = suplemento.tipo;
+        })
+    })
+}

@@ -1,13 +1,3 @@
-.meucarrinho p {
-    position: relative;
-    top: 20vh;
-    left: 5vw;
-    color: #173EC7;
-    font-weight: bold;
-    font-size: 1.4rem;
-    width: 40vw;
-    text-transform: uppercase;
-}
 
 .prodselect {
     width: 70%;
@@ -26,7 +16,8 @@
     width: 15vw;
     border: 1px solid rgba(92, 89, 89, 0.397);
     position: relative;
-    top: 4vh;
+    top: 30vh;
+    left: 15vw;
 }
 
 .pimg p {
@@ -40,27 +31,19 @@
     height: 10vh;
     width: 20vw;
     border: 1px solid rgba(92, 89, 89, 0.397);
-    margin-left: 2vw;
-    margin-top: 4vh;
+    margin-left: 35vw;
     padding: 30px;
-}
-
-.ppreco {
-    height: 10vh;
-    padding: 30px;
-    width: 20vw;
-    border: 1px solid rgba(92, 89, 89, 0.397);
-    margin-left: -20vw;
-    margin-top: 20vh;
+    position: relative;
+    margin-top: 10px;
 }
 
 .resumoped {
     position: relative;
-    left: 8vw;
-    top: 4vh;
-    height: 30vh;
-    width: 20vw;
+    left: 59vw;
+    height: 25vh;
+    width: 16vw;
     border: 1px solid rgba(92, 89, 89, 0.397);
+    top: -10vh
 }
 
 .presumo {
@@ -100,7 +83,7 @@
     border: 1px solid rgba(92, 89, 89, 0.397);
     border-top: none;
     position: relative;
-    left: 5vw;
+    left: 2vw;
     top: 27.3vh;
     padding: 15px;
 }
@@ -123,9 +106,122 @@
     margin: auto;
     text-transform: uppercase;
     color: #fff;
+    background: #000000;
+    border: none;
+    border-radius: 5px;
+    padding: 12px;
+    cursor: pointer;
+    position: relative;
+    top: 7vh;
+    left: -4px;
+}
+
+.fecharped2 {
+    text-align: center;
+}
+
+.fecharped2 button {
+    height: 6vh;
+    width: 7vw;
+    display: flex;
+    margin: auto;
+    text-transform: uppercase;
+    color: rgb(255, 255, 255);
     background: #173EC7;
     border: none;
     border-radius: 5px;
     padding: 12px;
     cursor: pointer;
+    position: relative;
+    top: 7vh;
+    left: -3.9vw;
+    text-align: center;
+}
+.pp{
+    position: relative;
+    top: 20vh;
+    left: 21vw;
+    color: #173EC7;
+    font-weight: bold;
+    font-size: 1.4rem;
+    width: 40vw;
+    text-transform: uppercase;
+}
+.lineprodutos2 {
+    display: grid;
+    grid-template-columns: 310px 310px 310px 310px;
+    position: relative;
+    top: 25vh;
+    left: 20vw;
+    width: 25vw;
+}
+.produto {
+    height: 44vh;
+    width: 14vw;
+    margin-left: 10vws;
+    /* background: rgb(138, 133, 133); */
+    border-radius: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.288);
+}
+
+.imagemprod {
+    height: 28vh;
+    width: 100%;
+    background: url("../assets/whey.png");
+    background-size: cover;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+.descprod {
+    color: rgb(0, 0, 0);
+    font-size: 1rem;
+    text-align: center;
+    letter-spacing: 0.1rem;
+    font-weight: bold;
+}
+
+.descprod button {
+    width: 60%;
+    height: 3vh;
+    margin-top: 3.5vh;
+    background: #173EC7;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.descprod a {
+    text-decoration: none;
+    color: white;
+}
+
+.p1 {
+    margin-top: 2vh;
+}
+
+.p2 {
+    margin-top: 2vh;
+}
+.titulo {
+    position: relative;
+    top: 15vh;
+    left: 20vw;
+    width: 60vw
+}
+.pt1 {
+
+    position: relative;
+    width: 60vw;
+    font-size: 50px;
+    text-align: center;
+}
+.titulo h2{
+    position: relative;
+    text-align: center;
+}
+.pval {
+    position: relative;
+    left: 8vw;
 }

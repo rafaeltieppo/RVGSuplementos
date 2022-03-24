@@ -24,48 +24,30 @@
     margin: auto;
     background-repeat: no-repeat;
 }
-
-
-/*IMAGEM</>*/
-
-
-.goku {
-    position: absolute;
-    top: 64.5vh;
-    left: 5vw;
-    height: 47vh;
-    width: 18vw;
-    background: url("../assets/goku.png");
-}
-
 .lineprodutos1 {
-    display: grid;
-    grid-template-columns: 310px 310px 310px 310px;
-    position: relative;
-    top: 5vh;
-    left: 28vw;
-    width: 65vw;
-}
-
-.lineprodutos2 {
+    background-color: rgb(255, 255, 255);
     display: grid;
     grid-template-columns: 310px 310px 310px 310px 310px;
     position: relative;
     top: 27vh;
-    left: 10vw;
-    width: 65vw;
+    left: 20vw;
+    width: 75vw;
 }
-
-
-/*CARD-PRODUTO*/
-
-
+.lineprodutos2 {
+    display: grid;
+    grid-template-columns: 310px 310px 310px 310px 310px;
+    position: relative;
+    top: 35vh;
+    left: 20vw;
+    width: 75vw;
+}
 .produto {
-    height: 46vh;
+    height: 44vh;
     width: 14vw;
+    margin-left: 10vws;
     /* background: rgb(138, 133, 133); */
     border-radius: 10px;
-    border: 1px solid rgba(128, 128, 128, 0.288);
+    border: 1px solid rgba(0, 0, 0, 0.288);
 }
 
 .imagemprod {
@@ -76,13 +58,6 @@
     border-radius: 5px;
     margin-top: 10px;
 }
-
-/* .imagemprod p {
-    color: white;
-    font-size: 1.5rem;
-    text-align: center;
-} */
-
 .descprod {
     color: rgb(0, 0, 0);
     font-size: 1rem;
@@ -115,32 +90,20 @@
 .p2 {
     margin-top: 2vh;
 }
-
-
-/*CARD-PRODUTO</>*/
-
-
-.omv {
+.titulo {
     position: relative;
-    top: 18vh;
-    left: 10vw;
-    width: 30vw;
+    top: 15vh;
+    left: 20vw;
+    width: 60vw
 }
+.pt1 {
 
-.omv p {
-    font-size: 1.2rem;
-    text-transform: uppercase;
-    font-weight: 570;
-    letter-spacing: 0.15rem
+    position: relative;
+    width: 60vw;
+    font-size: 50px;
+    text-align: center;
 }
-/* 
-.imagens {
-    display: flex;
-    justify-content: space-evenly;
-    margin: 0 auto;
-    margin-top: 12vh;
-    width: 70vw;
+.titulo h2{
+    position: relative;
+    text-align: center;
 }
-
-.imagens img {
-} */
