@@ -103,6 +103,11 @@ header {
     right: -16vw;
 }
 
+.nomeh {
+    position: relative;
+    font-size: 1rem
+}
+
 /*HEADER</>*/
 
 
@@ -114,7 +119,7 @@ header {
     background-color: #1c140d;
     position: fixed;
     top: 67px;
-    z-index: 999;
+    z-index: 500;
 }
 
 .categ {
@@ -202,13 +207,24 @@ header {
 .car {
     position: relative;
     top: 22vh;
-    left: -8.2vw
+    right: 9.3vw;
 }
 
 .car p {
     font-size: 1.1rem;
 }
 
+.sair {
+    position: relative;
+    top: 27vh;
+    right: 15.5vw;
+}
+
+.sair p {
+    font-size: 1.1rem;
+    color: #173EC7;
+    cursor: pointer;
+}
 
 /*MENU</>*/
 

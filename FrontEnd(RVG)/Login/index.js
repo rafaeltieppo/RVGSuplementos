@@ -12,29 +12,45 @@ function loadpage() {
     nome.style.display = "none";
 }
 
+function carregarpag() {
+    verificaAcesso();
+    loadpage();
+}
+
 function login() {
-    let userdata = JSON.stringify({
-        email: email.value,
-        senha: senha.value,
-    });
+    let userdata = {
+        "email": email.value,
+        "senha": senha.value
+    }
 
-    console.log(userdata);
+    // if(nome != "") userdata.nome = nome.value
 
-    fetch("http://localhost/backend/src/controll/routes/route.clientes.php", {
-        "method": 'POST',
-        "headers": {
+    fetch("http://localhost/-banco-digital-/backend/src/controll/routes/route.clientes.php", {
+        method: 'POST',
+        headers: {
             "Content-Type": "application/json"
         },
-        "body": userdata
+        body: JSON.stringify(userdata)
     })
-    .then(resp => { return resp.json() })
-    .then(data => { 
-        if(data.lenght > 0) {
-            window.location.href = '../Home/index.js';
+    .then(resp => { 
+        return resp.json();
+    })
+    .then(data => {
+        console.log(data)
+        if(data.status !== undefined) {
+            alert(data.status);
         }else {
-            alert("Usuario ou senha invalida");
-        }
+            localStorage.setItem("data", JSON.stringify(data));
+            console.log(localStorage.getItem('data'))
+            window.location.href = "../home/index.html";
+        }    
     })
+}
+
+function verificaAcesso() {
+    if(localStorage.getItem('data') != null) {
+        window.location.href = "../home/index.html";
+    }
 }
 
 function cadastraruser() {
@@ -43,7 +59,7 @@ function cadastraruser() {
         senha: senha.value,
         nome: nomeuser.value
     })
-    console.log(data)
+    console.log(data);
 }
 
 function cadastrarbox() {

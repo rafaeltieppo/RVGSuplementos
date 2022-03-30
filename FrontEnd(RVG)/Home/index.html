@@ -8,12 +8,11 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="../global/glocal.css">
-    <link rel="stylesheet" href="./slider.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Poppins:wght@500&display=swap" rel="stylesheet">
 </head>
-<body>
+<body onload="carregarSuplementos(), verNome()">
     <header>
         <div class="conteudo">
             <div class="logo">
@@ -27,7 +26,7 @@
             <div class="loginarea">
                 <div class="loginuser">
                     <img src="../assets/user.png" class="userimg">
-                    <p href="../Login/index.html">Entrar</p>
+                    <p class="pentrar" href="../Login/index.html">Entrar</p>
                 </div>
                 <div class="menu" onclick="Menu()">
                     <img src="../assets/menu.png" alt="" onclick="showModal()">
@@ -44,6 +43,9 @@
                     <div class="car">
                         <p>Meu Carrinho</p>
                     </div>
+                </div>
+                <div class="sair">
+                    <p onclick="logout()">Sair</p>
                 </div>
             </div>
         </div>
@@ -67,8 +69,7 @@
                     <!-- <p>Imagem ilustrativa</p> -->
                 </div>
                 <div class="descprod">
-                    <p class="p1">Descrição</p>
-                    <p class="p2">R$ 0,00</p>
+                    
                      <button><a href="../telaCompra/index.html">Comprar</a></button>
                 </div>
             </div>
@@ -77,8 +78,7 @@
                     <!-- <p>Imagem ilustrativa</p> -->
                 </div>
                 <div class="descprod">
-                    <p class="p1">Descrição</p>
-                    <p class="p2">R$ 0,00</p>
+                   
                     <button><a href="../telaCompra/index.html">Comprar</a></button>
                 </div>
             </div>
@@ -87,8 +87,7 @@
                     <!-- <p>Imagem ilustrativa</p> -->
                 </div>
                 <div class="descprod">
-                    <p class="p1">Descrição</p>
-                    <p class="p2">R$ 0,00</p>
+                    
                     <button><a href="../telaCompra/index.html">Comprar</a></button>
                 </div>
             </div>
@@ -97,8 +96,7 @@
                     <!-- <p>Imagem ilustrativa</p> -->
                 </div>
                 <div class="descprod">
-                    <p class="p1">Descrição</p>
-                    <p class="p2">R$ 0,00</p>
+                    
                     <button><a href="../telaCompra/index.html">Comprar</a></button>
                 </div>
             </div>
@@ -116,8 +114,7 @@
                     <!-- <p>Imagem ilustrativa</p> -->
                 </div>
                 <div class="descprod">
-                     <p class="p1">Descrição</p>
-                     <p class="p2">R$ 0,00</p>
+                     
                      <button>Comprar</button>
                 </div>
             </div>
@@ -126,8 +123,7 @@
                     <!-- <p>Imagem ilustrativa</p> -->
                 </div>
                 <div class="descprod">
-                    <p class="p1">Descrição</p>
-                    <p class="p2">R$ 0,00</p>
+                    
                     <button>Comprar</button>
                 </div>
             </div>
@@ -136,8 +132,7 @@
                     <!-- <p>Imagem ilustrativa</p> -->
                 </div>
                 <div class="descprod">
-                    <p class="p1">Descrição</p>
-                    <p class="p2">R$ 0,00</p>
+                   
                     <button>Comprar</button>
                 </div>
             </div>
@@ -146,8 +141,7 @@
                     <!-- <p>Imagem ilustrativa</p> -->
                 </div>
                 <div class="descprod">
-                    <p class="p1">Descrição</p>
-                    <p class="p2">R$ 0,00</p>
+                    
                     <button>Comprar</button>
                 </div>
             </div>
@@ -156,8 +150,7 @@
                     <!-- <p>Imagem ilustrativa</p> -->
                 </div>
                 <div class="descprod">
-                    <p class="p1">Descrição</p>
-                    <p class="p2">R$ 0,00</p>
+                    
                     <button>Comprar</button>
                 </div>
             </div>

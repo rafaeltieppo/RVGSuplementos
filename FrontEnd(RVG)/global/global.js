@@ -3,6 +3,7 @@ var modal = document.querySelector(".modal");
 var body = document.querySelector("body");
 var options = document.querySelector('.options');
 var on = document.querySelector(".on");
+var data = localStorage.getItem('data');
 
 function showModal() {
     modal.style.display = "flex";
@@ -19,7 +20,7 @@ function closeModal() {
 
 function Menu() {
     let ola = document.createElement('p');
-    ola.innerHTML = 'Olá';
+    ola.innerHTML = 'Olá' + data.nome;
     ola.className = "ola";
 
     let cmc = document.createElement('p');
