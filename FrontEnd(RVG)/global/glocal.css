@@ -11,7 +11,7 @@
 header {
     height: 7vh;
     display: flex;
-    background-color: rgb(255, 255, 255);
+    background-color: #EEEEEE;
     padding: 10px;
     position: fixed;
     top: 0;
@@ -38,14 +38,14 @@ header {
     display: flex;
     justify-content: space-between;
     width: 100vw;
-    background: white;
+    background-color: #EEEEEE;
 }
 
 .searchbar input {
     height: 4vh;
     width: 34vw;
-    background-color: rgba(128, 128, 128, 0.185);
-    border: 1px solid #fff;
+    background-color: rgba(255, 255, 255);
+    border: none;
     border-radius: 3px;
     padding: 10px;
 }

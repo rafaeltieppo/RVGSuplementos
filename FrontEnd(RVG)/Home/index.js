@@ -3,7 +3,9 @@ var modal = document.querySelector(".modal");
 var body = document.querySelector("body");
 var options = document.querySelector('.options');
 var on = document.querySelector(".on");
-var data = localStorage.getItem('data')
+var data = localStorage.getItem('data');
+var descprod = document.querySelector(".descprod");
+var linhas = 0;
 
 let loginuser = document.querySelector('.loginuser');
     loginuser.addEventListener("click", () => {
@@ -47,30 +49,52 @@ function logout() {
     alert("Voçê saiu da sua conta");
 }
 
-function carregarSuplementos() {
-    fetch("http://localhost/-banco-digital-/backend/src/controll/routes/route.suplementos.php")
-    .then(resp => { return resp.json() })
-    .then(data => { 
-        data.arr.forEach(e => {
-            let pnome = document.createElement("p");
-            let ppreco = document.createElement("p");
-            let descprod = document.querySelector(".descprod");
-            let button = document.createElement("button");
+async function carregarSuplementos(cont1 = 0) {
+    // const botao = document.querySelector('.botaos')
 
-            console.log(pnome);
+    let url = "http://localhost/-banco-digital-/backend/src/controll/routes/route.suplementos.php/";
 
-            pnome.innerHTML = e.nome ;
-            ppreco.innerHTML = "R$" + e.preco;
-            button.innerHTML = "Comprar"
+    // if(cont1 != null) url += "?cont1="+cont1;
+    
+    // console.log(url);
 
-            descprod.appendChild(pnome);
-            descprod.appendChild(ppreco);
-            descprod.appendChild(button);
+    const data = await fetch(url)
+                .then(resp => resp.json())
+                .then(data => {
+                    data.arr.forEach(e => {
+                        let p = document.createElement('p');
+                        let preco = document.createElement('p');
 
-            descprod.index[1]
-        })
-    });
+                        p.innerHTML = e.nome;
+                        preco.innerHTML = e.preco;
 
+                        descprod.appendChild(p)
+                        descprod.appendChild(preco)
+
+                      
+                    });
+                    return data;
+                });
+
+    // linhas = data.numero;
+
+    // if(!botao.innerHTML.includes('button')) {
+    //     for (let i = 0; i < linhas; i++) {
+                   
+    //         let butao = document.createElement('button')
+                    
+    //         butao.addEventListener('click', async () => {
+    //              cont1 += 30;
+    //              await carregarSuplementos(cont1);
+    //         })
+        
+    //          butao.innerHTML = "2";
+    //          botao.appendChild(butao);
+    //      }
+                
+    //     } else {
+    //          console.log(botao);
+    //  }
 }
 
 function verNome() {

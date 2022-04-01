@@ -31,7 +31,7 @@
 
 .goku {
     position: absolute;
-    top: 64.5vh;
+    top: 78vh;
     left: 5vw;
     height: 47vh;
     width: 18vw;
@@ -42,7 +42,7 @@
     display: grid;
     grid-template-columns: 310px 310px 310px 310px;
     position: relative;
-    top: 5vh;
+    top: 17vh;
     left: 28vw;
     width: 65vw;
 }
@@ -51,7 +51,7 @@
     display: grid;
     grid-template-columns: 310px 310px 310px 310px 310px;
     position: relative;
-    top: 27vh;
+    top: 37vh;
     left: 10vw;
     width: 65vw;
 }
@@ -66,6 +66,7 @@
     /* background: rgb(138, 133, 133); */
     border-radius: 10px;
     border: 1px solid rgba(128, 128, 128, 0.288);
+    box-shadow: 0px 0px 20px 0px rgba(128, 128, 128, 0.288)
 }
 
 .imagemprod {
@@ -122,7 +123,7 @@
 
 .omv {
     position: relative;
-    top: 18vh;
+    top: 27vh;
     left: 10vw;
     width: 30vw;
 }
@@ -132,6 +133,21 @@
     text-transform: uppercase;
     font-weight: 570;
     letter-spacing: 0.15rem
+}
+
+.linepro {
+    position: relative;
+    top: 10vh;
+    left: 10vw;
+    width: 30vw;
+}
+
+.linepro p {
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    font-weight: 570;
+    letter-spacing: 0.15rem;
+    
 }
 /* 
 .imagens {
