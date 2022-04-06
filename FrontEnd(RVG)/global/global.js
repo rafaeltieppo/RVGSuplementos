@@ -20,7 +20,7 @@ function closeModal() {
 
 function Menu() {
     let ola = document.createElement('p');
-    ola.innerHTML = 'Olá' + data.nome;
+    ola.innerHTML = 'Olá';
     ola.className = "ola";
 
     let cmc = document.createElement('p');

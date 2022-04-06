@@ -17,7 +17,7 @@
         <div class="conteudo">
             <div class="logo">
                 <h3>Weight</h3>
-                <p>Suplementos</p>
+                <p>Supplements</p>
             </div>
             <div class="searchbar">
                 <input type="text" placeholder="Do que você precisa?">
@@ -26,13 +26,10 @@
             <div class="loginarea">
                 <div class="loginuser">
                     <img src="../assets/user.png" class="userimg">
-                    <p href="../Login/index.html">Entrar</p>
+                    <p class="pentrar" href="../Login/index.html">Entrar</p>
                 </div>
                 <div class="menu" onclick="Menu()">
-                    <p>
-                        <img src="../assets/menu.png" alt="" onclick="showModal()">
-                    </p>
-                    
+                    <img src="../assets/menu.png" alt="" onclick="showModal()">
                 </div>
             </div>
             <div class="modal" hidden>
@@ -47,17 +44,43 @@
                         <p>Meu Carrinho</p>
                     </div>
                 </div>
+                <div class="sair">
+                    <p onclick="logout()">Sair</p>
+                </div>
             </div>
         </div>
     </header>
     <main>
         <div class="categoria">
-            <div class="categ">
-                <a>Categorias</a>
-                <a>Lançamentos</u>
-                <a>Danones</a>
-                <a>Whey</a>
-            </div>
+            <nav class="dp-menu">
+                <ul>
+                    <li><a href="../Home/index.html">Home</a></li>
+                    <li><a href="#">Categoria</a>
+                        <ul>
+                            <li><a href="#">Whey</a>
+                                <p>Top Whey 100% - MAX TITANIUM</p>
+                                <p>Whey Protein 80% - Growth</p>
+                                <p>Whey Protein Isolado - MAX TITANIUM</p>
+                            </li>
+                            <li><a href="#">Creatina</a>
+                                <p>Creatina Monohidrata - Growth</p>
+                                <p>Creatina 300g- MAX TITANIUM</p>
+                            </li>
+                            <li><a href="#">Pré treino</a>
+                                <p>Pré treino Horus - MAX TITANIUM</p>
+                                <p>Pré treino Égide - MAX TITANIUM</p>
+                            </li>
+                            <li><a href="#">Aminoácidos</a>
+                                <p>BCAA 60g 120 capsulas - Growth</p>
+                                <p>L-Glutamina (250g) - Growth</p>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Lançamentos</a></li>
+                    <li><a href="#">Danones</a></li>
+                    <li><a href="#">Contato</a></li>
+                </ul>
+            </nav>
         </div>
 
         <div class="meucarrinho">
@@ -103,9 +126,78 @@
                 </div>
             </div>
         </div>
-
-
     </main>
+    <footer id="footer">
+        <div class="footer-content">
+            <div class="logofooter">
+                <p class="pfooterlogo1">Weigth</p>
+                <p class="pfooterlogo2">Supplements</p>
+            </div>
+            <ul class="footer-menu">
+                <p>Empresa</p>
+                <li class="footer-menu-item">
+                    Sobre
+                </li>
+                <li class="footer-menu-item">
+                    Empregos
+                </li>
+                <li class="footer-menu-item">
+                    For the record
+                </li>
+            </ul>
+
+            <ul class="footer-menu">
+                <p>Comunidades</p>
+                <li class="footer-menu-item">
+                    Desenvolvedores
+                </li>
+                <li class="footer-menu-item">
+                    Marcas
+                </li>
+                <li class="footer-menu-item">
+                    Investidores
+                </li>
+                <li class="footer-menu-item">
+                    Fornecedores
+                </li>
+            </ul>
+
+            <ul class="footer-menu">
+                <p>Links úteis</p>
+                <li class="footer-menu-item">
+                    Ajuda
+                </li>
+                <li class="footer-menu-item">
+                    Aplicativo móvel grátis
+                </li>
+            </ul>
+
+            <div class="socials">
+                <i class="fab fa-instagram"></i>
+                <i class="fab fa-whatsapp"></i>
+                <i class="fab fa-facebook-f"></i>
+            </div>
+        </div>
+        <div class="footer-info">
+            <ul class="footer-info-items">
+                <li class="footer-info-item">Legal</li>
+                <li class="footer-info-item">Centro de Privacidade</li>
+                <li class="footer-info-item">Política de privacidade</li>
+                <li class="footer-info-item">Cookies</li>
+                <li class="footer-info-item">Sobre anúncios</li>
+            </ul>
+
+            <div class="rights">
+                <div class="country">
+                    <p>Brasil</p>
+                    <img src="assets/brazil.png" alt="" class="brazil-flag" />
+                </div>
+                <p>&copy; 2022 Weight Supplements</p>
+            </div>
+        </div>
+    </footer>
 </body>
 <script src="../global/global.js"></script>
+<script src="./index.js"></script>
+<script src="https://kit.fontawesome.com/64e40e69ad.js" crossorigin="anonymous"></script>
 </html>

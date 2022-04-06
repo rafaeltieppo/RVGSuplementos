@@ -25,7 +25,7 @@ function login() {
 
     // if(nome != "") userdata.nome = nome.value
 
-    fetch("http://localhost/-banco-digital-/backend/src/controll/routes/route.clientes.php", {
+    fetch("http://localhost/backend/src/controll/routes/route.clientes.php", {
         method: 'POST',
         headers: {
             "Content-Type": "application/json"

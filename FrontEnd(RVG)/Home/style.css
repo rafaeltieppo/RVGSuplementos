@@ -51,7 +51,7 @@
     display: grid;
     grid-template-columns: 310px 310px 310px 310px 310px;
     position: relative;
-    top: 37vh;
+    top: 25vh;
     left: 10vw;
     width: 65vw;
 }
@@ -61,7 +61,7 @@
 
 
 .produto {
-    height: 46vh;
+    height: 55vh;
     width: 14vw;
     /* background: rgb(138, 133, 133); */
     border-radius: 10px;
@@ -69,10 +69,9 @@
     box-shadow: 0px 0px 20px 0px rgba(128, 128, 128, 0.288)
 }
 
-.imagemprod {
-    height: 28vh;
+.imagemprod img{
+    height: 33vh;
     width: 100%;
-    background: url("../assets/whey.png");
     background-size: cover;
     border-radius: 5px;
     margin-top: 10px;
@@ -86,10 +85,11 @@
 
 .descprod {
     color: rgb(0, 0, 0);
-    font-size: 1rem;
+    font-size: 1.1rem;
     text-align: center;
     letter-spacing: 0.1rem;
     font-weight: bold;
+    border-top: 1px solid rgba(0, 0, 0, 0.281);
 }
 
 .descprod button {
@@ -127,7 +127,7 @@
 
 .omv {
     position: relative;
-    top: 27vh;
+    top: 15vh;
     left: 10vw;
     width: 30vw;
 }
@@ -153,14 +153,24 @@
     letter-spacing: 0.15rem;
     
 }
-/* 
+
 .imagens {
     display: flex;
     justify-content: space-evenly;
     margin: 0 auto;
-    margin-top: 12vh;
-    width: 70vw;
+    margin-top: 25vh;
+    width: 75vw;
 }
 
 .imagens img {
-} */
+    width: 35vw;
+    height: 30vh;
+} 
+
+.modalcate {
+    height: 20vh;
+    width: 20vw;
+    position: relative;
+    top: 30vh;
+    left: 40vw;
+}
