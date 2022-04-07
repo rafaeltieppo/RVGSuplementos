@@ -12,7 +12,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Poppins:wght@500&display=swap" rel="stylesheet">
 </head>
-<body onload="verNome()">
+<body onload="verNome(), carregarSuplementos()">
     <header>
         <div class="conteudo">
             <div class="logo">
@@ -90,13 +90,14 @@
         </div>
         <div class="goku"></div>
         <div class="lineprodutos1">
+            
             <div class="produto">
                 <div class="imagemprod">
                     <img src="../assets/creatina.png" alt="">
                 </div>
                 <div class="descprod">
-                    <p>Creatina Monohidrata - Growth</p>
-                    <p>R$ 120,00</p>
+                    <p>Whey de Chocolate - MAX TITANIUM</p>
+                    <p class="cardpreco">R$ 100,00</p>
                      <button><a href="../telaCompra/index.html">Comprar</a></button>
                 </div>
             </div>
@@ -106,7 +107,7 @@
                 </div>
                 <div class="descprod">
                     <p>Whey de Chocolate - MAX TITANIUM</p>
-                    <p>R$ 100,00</p>
+                    <p class="cardpreco">R$ 100,00</p>
                     <button><a href="../telaCompra/index.html">Comprar</a></button>
                 </div>
             </div>
@@ -116,7 +117,7 @@
                 </div>
                 <div class="descprod">
                     <p>BCAA 60g 120 capsulas- Growth</p>
-                    <p>R$ 60,00</p>
+                    <p class="cardpreco">R$ 60,00</p>
                     <button><a href="../telaCompra/index.html">Comprar</a></button>
                 </div>
             </div>
@@ -126,10 +127,11 @@
                 </div>
                 <div class="descprod">
                     <p>Whey Protein Isolado - MAX TITANIUM</p>
-                    <p>R$ 120,00</p>
+                    <p class="cardpreco">R$ 120,00</p>
                     <button><a href="../telaCompra/index.html">Comprar</a></button>
                 </div>
             </div>
+            
         </div>
 
          <div class="imagens">
@@ -141,62 +143,24 @@
             <p>Os mais vendidos</p>
         </div>
         <div class="lineprodutos2">
-            
-            <div class="produto">
-                <div class="imagemprod">
-                    <img src="../assets/creatina.png" alt="">
-                </div>
-                <div class="descprod">
-                    <p>Whey de Morango - Growth</p>
-                    <p>R$ 90,00</p>
-                    <button><a href="../telaCompra/index.html">Comprar</a></button>
-                </div>
-            </div>
-            <div class="produto">
-                <div class="imagemprod">
-                    <img src="../assets/creatina.png" alt="">
-                </div>
-                <div class="descprod">
-                    <p>Creatina Monohidrata - Growth</p>
-                    <p>R$ 120,00</p>
-                    <button><a href="../telaCompra/index.html">Comprar</a></button>
-                </div>
-            </div>
-            <div class="produto">
-                <div class="imagemprod">
-                    <img src="../assets/creatina.png" alt="">
-                </div>
-                <div class="descprod">
-                    <p>Creatina 300g - MAX TITANIUM</p>
-                    <p>R$ 110,00</p>
-                    <button><a href="../telaCompra/index.html">Comprar</a></button>
-                </div>
-            </div>
-            <div class="produto">
-                <div class="imagemprod">
-                    <img src="../assets/creatina.png" alt="">
-                </div>
-                <div class="descprod">
-                    <p>Pré treino Horus - MAX TITANIUM</p>
-                    <p>R$ 80,00</p>
-                    <button><a href="../telaCompra/index.html">Comprar</a></button>
-                </div>
-            </div>
-            <div class="produto">
-                <div class="imagemprod">
-                    <img src="../assets/creatina.png" alt="">
-                </div>
-                <div class="descprod">
-                    <p>Whey de baunilha 80% - Growth</p>
-                    <p>R$ 140,00</p>
-                    <button><a href="../telaCompra/index.html">Comprar</a></button>
-                </div>
-            </div>
             <div class="botaos">
-                
+                <p>a</p>
             </div>
+            <div class="produto">
+                <div class="imagemprod">
+                    <img src="../assets/creatina.png" alt="">
+                </div>
+                <div class="descprod">
+                    <p>Whey de Chocolate - MAX TITANIUM</p>
+                    <p class="cardpreco">R$ 100,00</p>
+                    <button><a href="../telaCompra/index.html">Comprar</a></button>
+                </div>
+            </div>
+    
+            
             
         </div>
+        
     </main>
     <footer id="footer">
         <div class="footer-content">
@@ -269,5 +233,6 @@
     </footer>
 </body>
 <script src="./index.js"></script>
+<script src="./paginacao.js"></script>
 <script src="https://kit.fontawesome.com/64e40e69ad.js" crossorigin="anonymous"></script>
 </html>

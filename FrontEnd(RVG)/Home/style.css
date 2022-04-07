@@ -56,6 +56,17 @@
     width: 65vw;
 }
 
+.botaos {
+    grid-column-start: 3;
+    grid-column-end: 6;
+
+    width: auto;
+}
+
+.botaos > button {
+    width: 7vh
+}
+
 
 /*CARD-PRODUTO*/
 
@@ -111,6 +122,12 @@
 
 .descprod p {
     margin-top: 20px;
+}
+
+.cardpreco {
+    font-size: 1.4rem;
+    color: #FF6500;
+    font-weight: bold;
 }
 
 .p1 {
