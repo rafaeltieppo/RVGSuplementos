@@ -8,20 +8,33 @@ import cretina1 from "../assets/creatianG.png"
 import uatis from "../assets/whatsapp-1 (1).png"
 import wheyMax from "../assets/suplements.png"
 
-export default function Home({navigation }) {
+export default function Compra({navigation }) {
     const irParaHome = () => {
         navigation.navigate("Home");
     };
+    
+    const irParaCarrinho = () => {
+        navigation.navigate("Carrinho");
+    };
+
+
     return (
         <ScrollView>
             <View style={styles.fundo}>
             <View style={styles.container}>
-                <Image source={Options} style={styles.options} />
+            <TouchableOpacity onPress={ () => {
+                    console.log("oi")
+                    navigation.toggleDrawer();
+                }}>
+                    <Image source={Options} style={styles.options} />
+                </TouchableOpacity>
                 <TouchableOpacity onPress={irParaHome} >
                     <Text style={styles.tituloTxt}>Weight</Text>
                     <Text style={styles.subTituloTxt}>Suplementos</Text>
                 </TouchableOpacity>
-                <Image source={littleCar} style={styles.littleCar} />
+                <TouchableOpacity style={styles.aee} onPress={irParaCarrinho}>
+                    <Image source={littleCar} style={styles.littleCar} />
+                </TouchableOpacity>
             </View>
             <View style={styles.placeholder}>
                 <TextInput style={styles.input} placeholder="Busque pelo seu suplemento ideal" />
@@ -113,8 +126,8 @@ export default function Home({navigation }) {
                     source={{uri:wheyMax}}
                     style={styles.wheys}
                 >
-                    <TouchableOpacity style={styles.verMais}>
-                        <Text style={styles.mais}>VER  MAIS</Text>
+                    <TouchableOpacity style={styles.verMais} onPress={irParaHome} >
+                        <Text style={styles.mais}>VER TODOS</Text>
                     </TouchableOpacity>
             </ImageBackground>
             </View>
@@ -124,7 +137,7 @@ export default function Home({navigation }) {
                     <Text style={styles.txtUatis}>WATSAPP</Text>
                 </TouchableOpacity>
                 <View style={styles.line}></View>
-                <Text style={styles.lastTxt}>RVG SUplementos. Todods os direitos reservados. 2022</Text>
+                <Text style={styles.lastTxt}>RVG Susplementos. Todods os direitos reservados. 2022</Text>
             </View>
             </View>
         </ScrollView>

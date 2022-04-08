@@ -6,7 +6,7 @@ import littleCar from "../assets/vista-lateral-vazia-do-carrinho-de-compras.png"
 import growthWhey from "../assets/growth.png"
 
 
-export default function VerMais({navigation }) {
+export default function VerMais2({navigation }) {
     const irParaHome = () => {
         navigation.navigate("Home");
     };

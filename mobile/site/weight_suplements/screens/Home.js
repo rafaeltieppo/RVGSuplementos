@@ -15,20 +15,31 @@ import wheyMax from "../assets/suplements.png"
 
 
 
-export default function Home({navigation }) {
-    const irParaHome = () => {
-        navigation.navigate("Home");
+export default function Home({route, navigation}) {
+    const irParaCompra = () => {
+        navigation.navigate("Compra");
     };
 
+    const irParaCarrinho = () => {
+        navigation.navigate("Carrinho");
+    };
+    
     return (
         <ScrollView>
             <View style={styles.container}>
-                <Image source={Options} style={styles.options} />
-                <TouchableOpacity onPress={irParaHome} >
+                <TouchableOpacity onPress={ () => {
+                    console.log("oi")
+                    navigation.toggleDrawer();
+                }}>
+                    <Image source={Options} style={styles.options} />
+                </TouchableOpacity>
+                <TouchableOpacity>
                     <Text style={styles.tituloTxt}>Weight</Text>
                     <Text style={styles.subTituloTxt}>Suplementos</Text>
                 </TouchableOpacity>
-                <Image source={littleCar} style={styles.littleCar} />
+                <TouchableOpacity style={styles.aee} onPress={irParaCarrinho}>
+                    <Image source={littleCar} style={styles.littleCar} />
+                </TouchableOpacity>
             </View>
                 <View style={styles.placeholder}>
                 <TextInput style={styles.input} placeholder="Busque pelo seu suplemento ideal" />
@@ -54,7 +65,7 @@ export default function Home({navigation }) {
                     <Text style={styles.precProd}>R$124,39</Text>
                     </View>
                     <View style={styles.botao}>
-                    <TouchableOpacity style={styles.timeInput}>
+                    <TouchableOpacity style={styles.timeInput} onPress={irParaCompra} >
                         <Text style={styles.txt} >COMPRAR</Text>
                     </TouchableOpacity>
                     </View>
@@ -72,7 +83,7 @@ export default function Home({navigation }) {
                     <Text style={styles.precProd}>R$124,39</Text>
                     </View>
                     <View style={styles.botao}>
-                    <TouchableOpacity style={styles.timeInput}>
+                    <TouchableOpacity style={styles.timeInput}  onPress={irParaCompra}>
                         <Text style={styles.txt} >COMPRAR</Text>
                     </TouchableOpacity>
                     </View>
@@ -92,7 +103,7 @@ export default function Home({navigation }) {
                     <Text style={styles.precProd}>R$124,39</Text>
                     </View>
                     <View style={styles.botao}>
-                    <TouchableOpacity style={styles.timeInput}>
+                    <TouchableOpacity style={styles.timeInput}  onPress={irParaCompra}>
                         <Text style={styles.txt} >COMPRAR</Text>
                     </TouchableOpacity>
                     </View>
@@ -110,7 +121,7 @@ export default function Home({navigation }) {
                     <Text style={styles.precProd}>R$124,39</Text>
                     </View>
                     <View style={styles.botao}>
-                    <TouchableOpacity style={styles.timeInput}>
+                    <TouchableOpacity style={styles.timeInput}  onPress={irParaCompra}>
                         <Text style={styles.txt} >COMPRAR</Text>
                     </TouchableOpacity>
                     </View>
@@ -141,7 +152,7 @@ export default function Home({navigation }) {
                     <Text style={styles.precProd}>R$124,39</Text>
                     </View>
                     <View style={styles.botao}>
-                    <TouchableOpacity style={styles.timeInput}>
+                    <TouchableOpacity style={styles.timeInput}  onPress={irParaCompra}>
                         <Text style={styles.txt} >COMPRAR</Text>
                     </TouchableOpacity>
                     </View>
@@ -162,7 +173,7 @@ export default function Home({navigation }) {
                     <Text style={styles.precProd}>R$124,39</Text>
                     </View>
                     <View style={styles.botao}>
-                    <TouchableOpacity style={styles.timeInput}>
+                    <TouchableOpacity style={styles.timeInput}  onPress={irParaCompra}>
                         <Text style={styles.txt} >COMPRAR</Text>
                     </TouchableOpacity>
                     </View>
@@ -182,7 +193,7 @@ export default function Home({navigation }) {
                     <Text style={styles.precProd}>R$124,39</Text>
                     </View>
                     <View style={styles.botao}>
-                    <TouchableOpacity style={styles.timeInput}>
+                    <TouchableOpacity style={styles.timeInput}  onPress={irParaCompra}>
                         <Text style={styles.txt} >COMPRAR</Text>
                     </TouchableOpacity>
                     </View>
@@ -200,7 +211,7 @@ export default function Home({navigation }) {
                     <Text style={styles.precProd}>R$124,39</Text>
                     </View>
                     <View style={styles.botao}>
-                    <TouchableOpacity style={styles.timeInput}>
+                    <TouchableOpacity style={styles.timeInput}  onPress={irParaCompra}>
                         <Text style={styles.txt} >COMPRAR</Text>
                     </TouchableOpacity>
                     </View>

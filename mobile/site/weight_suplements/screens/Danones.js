@@ -6,7 +6,7 @@ import littleCar from "../assets/vista-lateral-vazia-do-carrinho-de-compras.png"
 import growthWhey from "../assets/growth.png"
 
 
-export default function Home({navigation }) {
+export default function Danones({navigation }) {
     const irParaHome = () => {
         navigation.navigate("Home");
     };
@@ -14,7 +14,12 @@ export default function Home({navigation }) {
         <ScrollView>
         <View style={styles.tudo}>
         <View style={styles.container}>
-        <Image source={Options} style={styles.options} />
+        <TouchableOpacity onPress={ () => {
+                    console.log("oi")
+                    navigation.toggleDrawer();
+                }}>
+                    <Image source={Options} style={styles.options} />
+                </TouchableOpacity>
             <TouchableOpacity onPress={irParaHome} >
                 <Text style={styles.tituloTxt}>Weight</Text>
                 <Text style={styles.subTituloTxt}>Suplementos</Text>

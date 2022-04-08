@@ -1,27 +1,21 @@
 import { StatusBar } from "expo-status-bar";
 import React, { useState } from "react";
 import { StyleSheet, Text, View, Image, TextInput, ScrollView, TouchableOpacity, ImageBackground} from "react-native";
-import { log } from "react-native-reanimated";
-import { initialWindowSafeAreaInsets } from "react-native-safe-area-context";
-import { Alert } from "react-native-web";
 import gym from "../assets/academia.jpg";
 
+export default function Cadastro({navigation }) {
 
-
-export default function Login({navigation }) {
-    const irParaCadastro = () => {
-        navigation.navigate("Cadastro");
-    };
-    
     const [useEmail, setEmail] = useState("")
     const [useSenha, setSenha] = useState("")
+    const [useName, setName] = useState("")
 
-    let data = {
+    let userdata = {
         email: useEmail,
-        senha: useSenha
+        senha: useSenha,
+        nome: useName,
     }
 
-    const login = (body) => {
+    const cadastro = (body) => {
         fetch("http://localhost/-banco-digital-/backend/src/controll/routes/route.clientes.php", {
             method: 'POST',
             headers: {
@@ -33,16 +27,17 @@ export default function Login({navigation }) {
             return resp;
         })
         .then(data  => {
-            if(data.status == 200) {
+            console.log(data.status);
+            if(data.status == 201) {
                //login certo
                data.json().then( result => {
-                    navigation.navigate('Home')
+                    navigation.navigate('Login')
                     console.log(result);
                })
-            }else if(data.status == 401) {
-                //senha tiver errada
+            }else if(data.status == 400) {
+                //email ja cadastrado
     
-                alert('senha errada')
+                alert('email ja existente')
             }
         });
     }
@@ -59,24 +54,24 @@ export default function Login({navigation }) {
             </View>
             <View style={styles.box}>
                 <View style={styles.card}>
-                    <Text style={styles.login}>Login</Text>
-                    <TextInput style={styles.input}
-                     placeholder="Email"
-                     onChangeText={setEmail}
-                     value={useEmail}
-                     />
-                    <TextInput style={styles.input1}
-                     placeholder="Senha"
-                     onChangeText={setSenha}
-                     value={useSenha}
-                     />
-                     <Text>{useSenha}</Text>
-                    <TouchableOpacity style={styles.button} onPress={() => login(data)}>
-                        <Text style={styles.buttonText}>Entrar</Text>
-                    </TouchableOpacity>
-                    <Text style={styles.tittle2}>Não tem conta ?</Text>
-                    <TouchableOpacity onPress={irParaCadastro} >
-                        <Text style={styles.subTittle2}>Cadastre-se</Text>
+                    <Text style={styles.login}>Cadastro</Text>
+                    <TextInput style={styles.input} 
+                    placeholder="Email"
+                    onChangeText={setEmail}
+                    value={useEmail}
+                    />
+                    <TextInput style={styles.input1} 
+                    placeholder="Senha"
+                    onChangeText={setSenha}
+                    value={useSenha}
+                    />
+                    <TextInput style={styles.input1} 
+                    placeholder="Nome completo" 
+                    onChangeText={setName}
+                    value={useName}
+                    />
+                    <TouchableOpacity style={styles.button} >
+                        <Text style={styles.buttonText} onPress={() => cadastro(userdata)}>Cadastrar</Text>
                     </TouchableOpacity>
                 </View>
             </View>
@@ -109,7 +104,7 @@ const styles = StyleSheet.create({
     card: {
         backgroundColor: "#173EC7",
         width: "65%",
-        height: 400,
+        height: 450,
         borderRadius: 10,  
         alignItems: "center",
         borderWidth: 4,
