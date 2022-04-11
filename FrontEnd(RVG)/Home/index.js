@@ -7,6 +7,7 @@ var data = localStorage.getItem('data');
 var descprod = document.querySelector(".descprod");
 var linhas = 0;
 var loginuser = document.querySelector('.loginuser');
+var divEfetuado = document.querySelector(".divEfetuado");  
 
     loginuser.addEventListener("click", () => {
     window.location.href="../Login/index.html";
@@ -112,3 +113,11 @@ function verNome() {
         on.innerHTML = localStorage.getItem('data').nome;   
     }
 }
+
+// function newsEmail() {                  
+//     divEfetuado.style.display = "flex";
+// }
+
+// function closeemail() {
+//     divEfetuado.style.display = "none";
+// }

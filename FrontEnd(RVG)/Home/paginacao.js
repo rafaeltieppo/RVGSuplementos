@@ -26,7 +26,7 @@ async function carregarSuplementos(cont1 = 0) {
                         const titulo = divs[1].querySelectorAll('p')[0]
                         titulo.innerHTML = e.nome
                         const preco = divs[1].querySelectorAll('p')[1]
-                        preco.innerHTML = e.preco
+                        preco.innerHTML = "R$" + e.preco
                        
                         lineProdutoDois.appendChild(produto)
                      });

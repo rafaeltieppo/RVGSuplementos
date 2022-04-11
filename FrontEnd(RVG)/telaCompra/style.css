@@ -25,17 +25,32 @@
     background: cover;
     height: 30vh;
     margin-top: 4vh;
-    margin-left: 1vw
+    margin-left: 1vw;
 }
 
 .pdesc {
     height: 10vh;
     width: 20vw;
-    border: 1px solid rgba(92, 89, 89, 0.397);
     margin-left: 35vw;
-    padding: 30px;
     position: relative;
     margin-top: -10vh;
+}
+
+.valor {
+    height: 10vh;
+    width: 20vw;
+    margin-left: 35vw;
+    position: relative;
+}
+
+.valor p {
+    font-size: 1.5rem;
+    color: #53c052;
+    font-weight: bold;
+}
+
+.pdesc p {
+    font-size: 1.4rem;
 }
 
 .resumoped {
@@ -44,7 +59,24 @@
     height: 25vh;
     width: 16vw;
     border: 1px solid rgba(92, 89, 89, 0.397);
-    top: -10vh
+    top: -19vh;
+}
+
+.pagamento {
+    width: 15vw;
+    margin-left: 35vw;
+    position: relative;
+    margin-top: -5vh;
+}
+
+.principal {
+    background: black;
+    height: 60vh;
+    width: 80%;
+    margin-top: 20vh;
+    margin-left: 10vw;
+    box-shadow: 0px 0px 40px 10px rgba(0, 0, 0, 0.397);
+    border-radius: 5px 25px 5px 25px
 }
 
 .presumo {
@@ -97,7 +129,7 @@
 }
 
 .fecharped {
-    margin: 40px;
+    margin: 50px;
 }
 
 .fecharped button {
@@ -160,23 +192,27 @@
 }
 
 .produto {
-    height: 48vh;
+    height: 50vh;
     width: 14vw;
     margin-left: 10vws;
     /* background: rgb(138, 133, 133); */
     border-radius: 10px;
-    border: 1px solid rgba(0, 0, 0, 0.288);
-    box-shadow: 0px 0px 20px 0px rgba(128, 128, 128, 0.288)
+    border: 1px solid rgba(128, 128, 128, 0.288);
 }
 
-.imagemprod {
-    height: 28vh;
+.produto:hover {
+    box-shadow: 0px 0px 20px 0px rgba(128, 128, 128, 0.288);
+    transition: all 200ms ease;
+}
+
+.imagemprod img{
+    height: 33vh;
     width: 100%;
-    background: url("../assets/whey.png");
     background-size: cover;
     border-radius: 5px;
     margin-top: 10px;
 }
+
 .descprod {
     color: rgb(0, 0, 0);
     font-size: 1rem;
