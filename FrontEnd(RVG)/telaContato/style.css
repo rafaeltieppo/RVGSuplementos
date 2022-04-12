@@ -1,0 +1,127 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    outline: none;
+}
+
+.pfaleconosco {
+    text-align: center;
+    margin-top: 22vh;
+    margin-bottom: 5vh;
+}
+
+.pfaleconosco p {
+    font-size: 2.2rem;
+}
+
+.texto {
+    width: 53vw;
+    font-size: 1.1rem;
+    text-align: justify;
+    margin: 0 auto;
+    letter-spacing: 0.05rem;
+}
+
+.linhameio {
+    height: 1px;
+    width: 73vw;
+    background-color: rgba(0, 0, 0, 0.16);
+    position: relative;
+    top: 5vh;
+    margin: 0 auto; 
+}
+
+.cards {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    position: relative;
+    top: 15vh;
+}
+
+.cardctt {
+    height: 30vh;
+    width: 30vw;
+    /* background-color: #000000; */
+    border: 1px solid rgba(0, 0, 0, 0.21);
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.titulo p {
+    font-size: 1.8rem;
+    color: #173EC7;
+}
+
+.conteudocard {
+    display: flex;
+    margin-top: 3vh;
+}
+
+.mail {
+    margin-top: 0.7vh;
+    margin-left: 1vw;
+    font-size: 1.4rem;
+}
+
+.extra {
+    position: relative;
+    top: 5vh;
+    right: 18.3vw;
+}
+
+.extra2 {
+    position: relative;
+    top: 5vh;
+    right: 9vw;
+}
+
+.extra p {
+    width: 20vw;
+}
+
+.weightnews {
+    height: 12vh;
+    width: 100%;
+    background: #173EC7;
+    position: relative;
+    top: 40vh;
+    color: white
+}
+
+.divweight {
+    position: absolute;
+    left: 15vw;
+    top: 3vh;
+}
+
+.divweightemail {
+    position: absolute;
+    right: 10vw
+}
+
+.divweightemail input {
+    width: 27vw;
+    height: 6vh;
+    border-radius: 27px;
+    outline: none;
+    border: none;
+    margin-top: 3vh;
+    padding: 20px;
+} 
+
+.divweightemail button {
+    position: absolute;
+    right: 0vw;
+    top: 3.01vh;
+    height: 5.9vh;
+    width: 6vw;
+    border-radius: 27px;
+    border: none;
+    cursor: pointer;
+    background: #53c052;
+    color: white;
+    font-size: 0.9rem;
+}

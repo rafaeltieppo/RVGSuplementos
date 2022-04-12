@@ -113,11 +113,3 @@ function verNome() {
         on.innerHTML = localStorage.getItem('data').nome;   
     }
 }
-
-// function newsEmail() {                  
-//     divEfetuado.style.display = "flex";
-// }
-
-// function closeemail() {
-//     divEfetuado.style.display = "none";
-// }
