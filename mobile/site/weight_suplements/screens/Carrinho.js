@@ -93,7 +93,7 @@ export default function Carrinho({navigation }) {
                 <Text style={styles.txtPedido3}>R$129,90</Text>
             </View>
         </View>
-        <TouchableOpacity style={styles.fnlzrCompra}>
+        <TouchableOpacity style={styles.fnlzrCompra} onPress={irParaHome}>
             <Text style={styles.jaE}>FINALIZAR COMPRA</Text>
         </TouchableOpacity>
         <View style={styles.footer}>

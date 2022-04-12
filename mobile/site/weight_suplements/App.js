@@ -24,7 +24,7 @@ export default function App() {
         <Stack.Screen name="VerMais2" component={VerMais2} options={{headerShown: false}} /> 
       </Stack.Navigator>    */}
 
-      <Drawer.Navigator initialRouteName="Carrinho" screenOptions={{drawerStyle: {
+      <Drawer.Navigator initialRouteName="Danones" screenOptions={{drawerStyle: {
         backgroundColor: "white", 
       }}}>
         <Drawer.Screen name="Home" component={Home}  options={{headerShown: false}}/>

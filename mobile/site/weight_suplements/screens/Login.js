@@ -70,7 +70,6 @@ export default function Login({navigation }) {
                      onChangeText={setSenha}
                      value={useSenha}
                      />
-                     <Text>{useSenha}</Text>
                     <TouchableOpacity style={styles.button} onPress={() => login(data)}>
                         <Text style={styles.buttonText}>Entrar</Text>
                     </TouchableOpacity>

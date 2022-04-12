@@ -69,7 +69,7 @@ export default function Cadastro({navigation }) {
                     placeholder="Nome completo" 
                     onChangeText={setName}
                     value={useName}
-                    />
+                    />''
                     <TouchableOpacity style={styles.button} >
                         <Text style={styles.buttonText} onPress={() => cadastro(userdata)}>Cadastrar</Text>
                     </TouchableOpacity>
