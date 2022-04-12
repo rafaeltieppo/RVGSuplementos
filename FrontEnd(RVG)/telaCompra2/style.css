@@ -3,7 +3,7 @@
     width: 17vw;
     position: relative;
     left: 10vw;
-    top: 10vh;
+    top: 6vh;
 }
 
 .pimg img {
@@ -17,7 +17,7 @@
     width: 20vw;
     margin-left: 35vw;
     position: relative;
-    margin-top: -55vh;
+    margin-top: -60vh;
     color: white;
 }
 
@@ -40,7 +40,7 @@
 
 .resumoped {
     position: relative;
-    left: 59vw;
+    left: 65vw;
     height: 25vh;
     width: 16vw;
     border: 1px solid rgba(92, 89, 89, 0.397);
@@ -61,7 +61,7 @@
     background: black;
     height: 60vh;
     width: 65%;
-    margin-top: 30vh;
+    margin-top: 20vh;
     margin-left: 15vw;
     box-shadow: 0 0 40px 10px rgba(0,0,0,0.397);
     border-radius: 10px;
@@ -121,7 +121,7 @@
     display: grid;
     grid-template-columns: 310px 310px 310px 310px;
     position: relative;
-    top: 25vh;
+    top: 10vh;
     left: 15vw;
     width: 25vw;
 }
@@ -208,18 +208,11 @@
     color: white;
 }
 
-.dtp {
-    color: #173EC7;
-    position: relative;
-    top: -10vh;
-    font-size: 1.5rem;
-    text-transform: uppercase;
-}
-
 .lines {
     display: flex;
-    margin-top: -10vh; 
+    margin-top: 22vh;
     width: 100%;
+    margin-left: 15vw;
 }
 
 .linha1 {

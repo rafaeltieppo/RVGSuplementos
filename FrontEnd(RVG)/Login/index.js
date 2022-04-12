@@ -6,7 +6,6 @@ var ntc = document.querySelector(".ntc");
 var entrar = document.querySelector("#entrarbtn");
 var cadastrar = document.querySelector("#cadastrarbtn");
 
-
 function loadpage() {
     cadastrar.style.display = "none";
     nome.style.display = "none";
@@ -22,8 +21,6 @@ function login() {
         "email": email.value,
         "senha": senha.value
     }
-
-    // if(nome != "") userdata.nome = nome.value
 
     fetch("http://localhost/backend/src/controll/routes/route.clientes.php", {
         method: 'POST',

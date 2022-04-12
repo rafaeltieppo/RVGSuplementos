@@ -4,11 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>compra</title>
+    <title>Weight Supplements - Comprar</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="../global/glocal.css">
-    <link rel="stylesheet" href="./slider.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Poppins:wght@500&display=swap" rel="stylesheet">
@@ -84,6 +83,13 @@
             </nav>
         </div>
         <div class="principal">
+            <div class="dtp">
+                <p>Detalhes do Produto</p>
+            </div>
+            <div class="lines">
+                <div class="linha1"></div>
+                <div class="linha2"></div>
+            </div>
             <div class="pimg">
                 <img src="../assets/whey.png" alt="">
             </div>
@@ -95,27 +101,17 @@
             </div>
             <div class="pagamento">
                 <p>NO PIX OU DEPÓSITO</p>
-                <p>ou R$132, 00 no cartão de crédito em até 6x</p>
+                <p>ou R$132,00 no cartão de crédito</p>
+            </div> 
+            <div class="fecharped2">
+                <button> adicionar ao carrinho</button>
             </div>
-            <div class="resumoped">
-                <div class="total">
-                    <div class="ptotal">
-                        <p>Total</p>
-                    </div>
-                    <div class="pval">
-                        <p>R$ 120,00</p>
-                    </div>
-                <div class="fecharped2">
-                    <button> adicionar ao carrinho</button>
-                </div>
-               
-                </div>
-                <div class="fecharped">
-                    <button onclick="FecharPedido()">Comprar</button>
-                </div>
+            <div class="fecharped">
+                <button onclick="FecharPedido()">Comprar</button>
+            </div>
             </div>
         </div>
-            
+        
         <div class="prodrelaci">
             <p class="pp">produtos relacionados</p>
             <div class="lineprodutos2">
@@ -124,8 +120,8 @@
                         <img src="../assets/creatina.png" alt="">
                     </div>
                     <div class="descprod">
-                        <p>Whey de Chocolate - MAX TITANIUM</p>
-                        <p class="cardpreco">R$ 100,00</p>
+                        <p>Creatina Monohidrata - Growth</p>
+                        <p>R$ 120,00</p>
                          <button><a href="../telaCompra/index.html">Comprar</a></button>
                     </div>
                 </div>
@@ -135,7 +131,7 @@
                     </div>
                     <div class="descprod">
                         <p>Whey de Chocolate - MAX TITANIUM</p>
-                        <p class="cardpreco">R$ 100,00</p>
+                        <p>R$ 100,00</p>
                         <button><a href="../telaCompra/index.html">Comprar</a></button>
                     </div>
                 </div>
@@ -145,7 +141,7 @@
                     </div>
                     <div class="descprod">
                         <p>BCAA 60g 120 capsulas- Growth</p>
-                        <p class="cardpreco">R$ 60,00</p>
+                        <p>R$ 60,00</p>
                         <button><a href="../telaCompra/index.html">Comprar</a></button>
                     </div>
                 </div>
@@ -155,13 +151,23 @@
                     </div>
                     <div class="descprod">
                         <p>Whey Protein Isolado - MAX TITANIUM</p>
-                        <p class="cardpreco">R$ 120,00</p>
+                        <p>R$ 120,00</p>
                         <button><a href="../telaCompra/index.html">Comprar</a></button>
                     </div>
                 </div>
             </div>  
         </div>
     </main>
+    <div class="weightnews">
+        <div class="divweight">
+            <h2>Weight News!</h2>
+            <p>Cadastre seu e-mail para receber promoçoes e novidades exclusivas da WeightSupplements</p>
+        </div>
+        <div class="divweightemail">
+            <input type="text" placeholder="Digite seu e-mail">
+            <button onclick="newsEmail()">Cadastrar</button>
+        </div>
+    </div>
     <footer id="footer">
         <div class="footer-content">
             <div class="logofooter">

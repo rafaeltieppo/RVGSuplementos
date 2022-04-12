@@ -4,20 +4,20 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Finalizar Compra</title>
+    <title>Weight Supplements - Finalizar Pedido</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="../global/glocal.css">
-    <link rel="stylesheet" href="./slider.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Poppins:wght@500&display=swap" rel="stylesheet">
-<body>
+</head>
+<body onload="verNome()">
     <header>
         <div class="conteudo">
             <div class="logo">
                 <h3>Weight</h3>
-                <p>Supplements</p>
+                <p>Suplementos</p>
             </div>
             <div class="searchbar">
                 <input type="text" placeholder="Do que você precisa?">
@@ -82,51 +82,79 @@
                 </ul>
             </nav>
         </div>
-
-        <div class="meucarrinho">
-            <p>Meu carrinho</p>
-        </div>
-
-        <div class="barra">
-            <p>Detalhes do produto</p>
-        </div>
-        <div class="prodselect">
+        <div class="principal">
+            <div class="dtp">
+                <p>Detalhes do Pedido</p>
+            </div>
+            <div class="lines">
+                <div class="linha1"></div>
+                <div class="linha2"></div>
+            </div>
             <div class="pimg">
-                <p>Imagem produto selecionado</p>
+                <img src="../assets/whey.png" alt="">
             </div>
             <div class="pdesc">
-                <p>Descrição do produto selecionado</p>
+                <p>100% Whey (900g) - MAX TITANIUM - Sabor baunilha</p>
             </div>
-            <div class="ppreco">
-                <p>Preço do produto selecionado</p>
-            </div>
-            <div class="resumoped">
-                <div class="presumo">
-                    <p>Resumo do pedido</p>
-                </div>
-                <div class="subt">
-                    <div class="psubt">
-                        <p>Subtotal</p>
-                    </div>
-                    <div class="pval">
-                        <p>R$ 0,00</p>
-                    </div>
-
-                </div>
-                <div class="total">
-                    <div class="ptotal">
-                        <p>Total</p>
-                    </div>
-                    <div class="pval">
-                        <p>R$ 0,00</p>
-                    </div>
-                </div>
-                <div class="fecharped">
-                    <button onclick="FecharPedido()">Fechar Pedido</button>
-                </div>
+            <div class="valor">
+                <p>R$ 120,00</p>
             </div>
         </div>
+
+        <div class="dados">
+            <div class="dp">
+                <p>Dados Pessoais</p>
+            </div>
+            <div class="cpf">
+                <p>Documento</p>
+                <input type="text" placeholder="Digite seu CPF">
+            </div>
+            <div class="entrega">
+                <p>Entrega</p>
+                <input type="text" placeholder="DIgite seu CEP">
+            </div>
+            <div class="nomeentrega">
+                <p>Nome para entrega</p>
+                <input type="text" placeholder="DIgite o nome">
+            </div>
+        </div>
+        <div class="resumoped">
+            <div class="presumo">
+                <p>Resumo do pedido</p>
+            </div>
+            <div class="subt">
+                <div class="psubt">
+                    <p>Subtotal</p>
+                </div>
+                <div class="pval">
+                    <p>R$ 120,00</p>
+                </div>
+
+            </div>
+            <div class="total">
+                <div class="ptotal">
+                    <p>Total</p>
+                </div>
+                <div class="pval">
+                    <p>R$ 120,00</p>
+                </div>
+            </div>
+            <div class="fecharped">
+                <button onclick="FecharPedido()">Fechar Pedido</button>
+            </div>
+        </div>
+
     </main>
+    <div class="weightnews">
+        <div class="divweight">
+            <h2>Weight News!</h2>
+            <p>Cadastre seu e-mail para receber promoçoes e novidades exclusivas da WeightSupplements</p>
+        </div>
+        <div class="divweightemail">
+            <input type="text" placeholder="Digite seu e-mail">
+            <button onclick="newsEmail()">Cadastrar</button>
+        </div>
+    </div>
     <footer id="footer">
         <div class="footer-content">
             <div class="logofooter">

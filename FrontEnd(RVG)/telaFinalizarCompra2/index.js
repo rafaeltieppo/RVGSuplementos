@@ -15,7 +15,3 @@ function verNome() {
         on.innerHTML = localStorage.getItem('data').nome;   
     }
 }
-
-function FecharPedido() {
-    window.location.href = "../telaFinalizarCompra"
-}

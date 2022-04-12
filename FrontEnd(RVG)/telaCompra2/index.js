@@ -17,5 +17,5 @@ function verNome() {
 }
 
 function FecharPedido() {
-    window.location.href = "../telaFinalizarCompra"
+    window.location.href = "../telaFinalizarCompra2"
 }
