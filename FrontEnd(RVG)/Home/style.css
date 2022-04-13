@@ -6,6 +6,26 @@
     outline: none;
 }
 
+.lista-suplementos {
+    position: relative;
+    top: 4.3vh;
+    right: 17.2vw;
+    height: 63vh;
+    width: 20vw;
+    background: white;
+    padding: 10px;
+}
+
+.card-suplementos {
+    display: flex;
+    flex-direction: row;;
+    margin-top: 1.5vh;
+    border-bottom: 1px solid black
+}
+
+.precolist {
+    color: #53c052;
+}
 
 /*IMAGEM*/
 

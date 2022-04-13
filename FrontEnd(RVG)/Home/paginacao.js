@@ -29,6 +29,10 @@ async function carregarSuplementos(cont1 = 0) {
                         preco.innerHTML = "R$" + e.preco
                        
                         lineProdutoDois.appendChild(produto)
+
+                        produto.addEventListener("click", () => {
+                            localStorage.setItem(produto, (nome, preco. imagem));
+                        })
                      });
                      
                      return data;

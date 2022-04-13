@@ -110,12 +110,22 @@
                 <input type="text" placeholder="Digite seu CPF">
             </div>
             <div class="entrega">
-                <p>Entrega</p>
+                <p>Endereço</p>
                 <input type="text" placeholder="DIgite seu CEP">
             </div>
             <div class="nomeentrega">
                 <p>Nome para entrega</p>
                 <input type="text" placeholder="DIgite o nome">
+            </div>
+            <div class="dadoscartao">
+                <p class="pcartao">Forma de Pagamento</p>
+                <select name="paga" id="paga">
+                    <option value="" disabled>Selecione uma forma de pagamento</option>
+                    <option id="option">PIX</option>
+                    <option id="option">Cartão de débito</option>
+                    <option id="option">Cartão de crédito</option>
+                    <option id="option">Boleto</option>
+                </select>
             </div>
         </div>
         <div class="resumoped">
@@ -140,10 +150,19 @@
                 </div>
             </div>
             <div class="fecharped">
-                <button onclick="FecharPedido()">Fechar Pedido</button>
+                <button onclick="fecharPedido()">Fechar Pedido</button>
             </div>
         </div>
-
+        <div class="cardpagamento">
+            <div>
+                <p>Pedido Efetudo com sucesso</p>
+                <img src="../assets/check.png" alt="">
+            </div>
+            <div class="divi">
+                <i>Um email foi enviado na sua caixa de entrada, verifique e acompanhe seu pedido</i>
+            </div>
+            <button onclick="fechar()">OK</button>
+        </div>
     </main>
     <div class="weightnews">
         <div class="divweight">

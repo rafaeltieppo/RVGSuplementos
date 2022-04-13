@@ -15,3 +15,9 @@ function verNome() {
         on.innerHTML = localStorage.getItem('data').nome;   
     }
 }
+
+function fecharPedido() {
+    let cardpagamento = document.querySelector(".cardpagamento");
+
+    cardpagamento.style.display = "flex" 
+}

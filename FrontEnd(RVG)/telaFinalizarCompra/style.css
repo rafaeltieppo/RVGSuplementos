@@ -5,7 +5,7 @@ main {
 .principal {
     background: black;
     height: 60vh;
-    width: 55%;
+    width: 45%;
     margin-top: 25vh;
     margin-left: 20vw;
     box-shadow: 0 0 40px 10px rgba(0,0,0,0.397);
@@ -37,16 +37,16 @@ main {
     border: 1px solid #000;
     position: absolute;
     top: 30vh;
-    left: 15vw;
     right: 5vw;
     padding: 30px;
     display: flex;
 }
+
 .pimg {
     height: 70vh;
     width: 17vw;
     position: relative;
-    left: 5vw;
+    left: 2vw;
     top: 10vh;
 }
 
@@ -85,7 +85,7 @@ main {
 .resumoped {
     position: relative;
     left: 55vw;
-    top: -30vh;
+    top: -40vh;
     height: 23vh;
     width: 20vw;
     border: 1px solid rgba(0, 0, 0, 0.397);
@@ -207,6 +207,18 @@ main {
     margin-top: 4vh;
 }
 
+.pcartao {
+    margin-top: 3vh;
+}
+
+#paga {
+    width: 12vw;
+    height: 3vh;
+    border-radius: 5px;
+    border: 1px solid rgba(0, 0, 0, 0.438);
+    margin-top: 1vh
+}
+
 .nomeentrega input {
     height: 4vh;
     width: 12vw;
@@ -278,4 +290,47 @@ main {
     background: #00000046;
     margin-left: 1vw;
     opacity: 0.5;
+}
+
+.cardpagamento {
+    position: relative;
+    top: -80vh;
+    height: 52vh;
+    width: 25vw;
+    background: rgb(255, 255, 255);
+    margin: 0 auto;
+    display: none;
+    box-shadow: 0 0px 10px 800px rgba(0, 0, 0, 0.404);
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.cardpagamento > div > p {
+    font-size: 1.5rem;
+    color: #173EC7;
+    margin-left: 2.7vw;
+    width: 20vw;
+}
+
+.cardpagamento > div > img {
+    margin-top: 2vh;
+    margin-left: 10vw;
+    height: 8vh;
+}
+
+.divi{
+    position: relative;
+    top: 15vh;
+    right: 13vw;
+}
+
+.cardpagamento > button {
+    height: 4vh;
+    width: 5vw;
+    background: #173EC7;
+    border: none;
+    color: white;
+    position: relative;
+    top: 40vh;
+    right: 17vw;
 }

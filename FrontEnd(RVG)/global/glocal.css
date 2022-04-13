@@ -48,12 +48,15 @@ header {
     border: none;
     border-radius: 3px;
     padding: 10px;
+    position: fixed;
+    left: 32vw;
+    top: 1.5vh;
 }
 
 .searchbar img {
-    position: relative;
-    top: 1.2vh;
-    right: 2.2vw;
+    position: fixed;
+    top: 2vh;
+    left: 63vw;
     height: 3vh;
     cursor: pointer;
 }
@@ -192,7 +195,7 @@ header {
     width: 100%;
     background-color: #1c140d;
     position: fixed;
-    top: 67px;
+    top: 65px;
     z-index: 500;
 }
 

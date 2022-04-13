@@ -16,12 +16,14 @@ var listaSuplementos = document.querySelector(".lista-suplementos");
             nome.innerHTML = suplemento.nome;
 
             preco.className = "precolist";
-            preco.innerHTML = suplemento.preco;
+            preco.innerHTML = "R$" + suplemento.preco;
             
             card.appendChild(nome);
             card.appendChild(preco);
 
             listaSuplementos.appendChild(card);
+
+            
 
         })
     })
@@ -33,7 +35,10 @@ function buscar() {
 
     for(let i = 0; i<linhas.length; i++) {
         if(linhas[1].innerHTML.toString().toLowerCase().includes(filtro)) {
-            prod[i].stye.display = "grid";
+            prod[i].style.display = "grid";
+            listaSuplementos.hidden = false;
+            console.log(listaSuplementos);
+            
         }else {
             prod[i].style.display = "none";
         }

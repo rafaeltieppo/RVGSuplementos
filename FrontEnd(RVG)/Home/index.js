@@ -108,8 +108,8 @@ function logout() {
 function verNome() {
     if(localStorage.getItem('data') != null) {
         let pe = document.querySelector('.pentrar');
-        let on = document.querySelector('.on')
-        pe.innerHTML = "Olá" + "\n" + localStorage.getItem('data').nome;
+        let on = document.querySelector('.on');
+        pe.innerHTML = "Olá" + "\n" + "michael"
         on.innerHTML = localStorage.getItem('data').nome;   
     }
 }
